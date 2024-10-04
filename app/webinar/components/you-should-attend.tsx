@@ -1,3 +1,5 @@
+import Image from "next/image";
+
 const YouShouldAttend = () => {
   return (
     <div className="mx-auto w-full text-center mt-40 flex flex-col">
@@ -30,7 +32,7 @@ const Card = ({ title, image }: CardProps) => {
     <div className="shadow-md rounded-lg p-1 w-full md:w-1/3 border transition-all duration-300  hover:bg-gradient-to-r hover:from-[#cdff64] hover:via-[#66d6ad] hover:to-[#13b5e8]">
      <div className="bg-black hover:border-transparent w-full h-full rounded-lg p-4">
 
-      <img src={image} alt={title} className="mb-2" />
+      <Image src={image} alt={title} className="mb-2" layout="responsive" width={500} height={300} />
       <p className="text-center text-xl text-ellipsis">{title}</p>
      </div>
     </div>

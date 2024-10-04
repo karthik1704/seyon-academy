@@ -1,7 +1,6 @@
 import { LOGO_ALT, LOGO_URL } from "@/app/constants";
 import Image from "next/image";
 
-import { Instagram } from "lucide-react";
 
 const Footer = () => {
   return (
