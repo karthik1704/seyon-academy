@@ -1,6 +1,6 @@
 import Link from "next/link";
 import Image from "next/image";
-import { VIDEOSECTIONURL, WEBINAR_URL } from "@/app/constants";
+import {  WEBINAR_URL } from "@/app/constants";
 
 interface LearnCardProps {
   title: string;
@@ -9,7 +9,7 @@ interface LearnCardProps {
   link: string;
 }
 
-const LearnCard = ({ title, description, image, link }: LearnCardProps) => {
+const LearnCard = ({ title, description, image }: LearnCardProps) => {
   return (
     <div className="flex flex-col justify-center items-center gap-2 border rounded-lg m-4 w-[250px] md:w-[350px] h-[700px] transition-transform duration-300 hover:scale-105 hover:z-10">
       <div className="h-64 w-[80%] md:h-[400px] relative p-2 mt-4">
