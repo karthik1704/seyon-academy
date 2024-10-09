@@ -2,9 +2,11 @@
 
 
 export const WEBINAR_DATETIME = 'Oct 20, 2021 06 PM';
-export const WEBINAR_URL = 'https://www.youtube.com/watch?v=6v2L2UGZJAM';
+export const WEBINAR_URL = 'https://imjo.in/e4Za96';
 
 export const LOGO_URL = '/images/logo/logo.png';
 export const LOGO_ALT = 'Seyon Academy Logo';
 
-export const VIDEOSECTIONURL = '/images/other/1.jpg';
+export const VIDEO_SECTION_IMAGE_JPG = '/images/1.jpg';
+export const VIDEO_SECTION_IMAGE_AVIF = '/images/1.avif';
+

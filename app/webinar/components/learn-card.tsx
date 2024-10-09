@@ -6,7 +6,7 @@ interface LearnCardProps {
   title: string;
   description: string;
   image: string;
-  link: string;
+
 }
 
 const LearnCard = ({ title, description, image }: LearnCardProps) => {

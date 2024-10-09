@@ -37,16 +37,16 @@ const WeHelp = () => {
   }, []);
 
   return (
-    <div className="mx-auto w-full mt-24 gap-6">
+    <div className="mx-auto w-full mt-24 ">
       <div className="flex flex-col  justify-center items-center mx-auto">
-        <h2 className="text-1xl font-semibold text-center inline-block md:text-5xl capitalize mb-4">
+        <h2 className="text-2xl font-semibold text-center inline-block md:text-5xl capitalize mb-4">
           We Help Students To Accelerate Their
           <br />
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#cdff64] via-[#66d6ad] to-[#13b5e8]">
             Neet Career
           </span>
         </h2>
-        <p className="text-xl">
+        <p className="text-xl text-ellipsis p-1 text-center m-2">
           We have helped 1000+ Students achieve mind blowing physics scores by
           helping them understand the REAL REASONS behind physics concepts
           through the best strategies and Concepts.

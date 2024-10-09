@@ -1,7 +1,7 @@
 import {
   LOGO_ALT,
   LOGO_URL,
-  VIDEOSECTIONURL,
+  VIDEO_SECTION_IMAGE_AVIF,
   WEBINAR_URL,
 } from "@/app/constants";
 import Image from "next/image";
@@ -18,16 +18,26 @@ const VideoSection = () => {
               Hosted By Seyon Academy
             </div>
           </div>
-          <div className="hidden md:block">
-            <p>image comes here</p>
+          
+          <div className="">
+            <h2 className="text-2xl font-semibold capitalize">
+              <span className="text-[#58FF29] text-3xl ">
+                {" "}
+                #1<sup className="lowercase">st</sup>
+              </span>{" "}
+              Ever NEET Physics community in TamilNadu
+            </h2>
+          
           </div>
         </div>
-        <div className="mt-2 border rounded-xl overflow-hidden">
+        <div className="mt-2 border rounded-xl overflow-hidden w-full ">
           <Image
-            src={VIDEOSECTIONURL}
-            alt="clarigy image"
-            width={800}
-            height={200}
+            src={VIDEO_SECTION_IMAGE_AVIF}
+            alt="atten webinar image"
+             width={800} // Original width
+          height={600} // Original height
+          className="w-full h-auto rounded-lg shadow-lg"
+            priority
           />
         </div>
 

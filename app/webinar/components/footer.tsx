@@ -18,7 +18,7 @@ const Footer = () => {
       <p className="text-lg mt-6">Follow us on:</p>
       <div className="flex justify-center space-x-4 mb-4 mt-2">
         <a
-          href="https://www.instagram.com/seyonacademy"
+          href="https://www.instagram.com/seyon_academy_"
           target="_blank"
           rel="noopener noreferrer"
         >
@@ -30,7 +30,7 @@ const Footer = () => {
           />
         </a>
         <a
-          href="https://wa.me/yourwhatsappnumber"
+          href="https://wa.me/+918681889968"
           target="_blank"
           rel="noopener noreferrer"
         >

@@ -3,15 +3,15 @@ import Link from "next/link";
 
 const JoinWebinar = () => {
   return (
-    <div className="flex flex-col items-center  mt-40">
-      <h2 className="text-1xl font-semibold text-center inline-block md:text-5xl capitalize mb-4">
+    <div className="flex flex-col items-center  mt-40 p-1">
+      <h2 className="text-2xl font-semibold text-center inline-block md:text-5xl capitalize mb-4">
         Get To Know The Best Methods To Get Good Marks In Neet Physics Before
         <br />
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#cdff64] via-[#66d6ad] to-[#13b5e8]">
           Everyone Else
         </span>
       </h2>
-      <p className="text-xl text-ellipsis text-center md:text-2xl text-slate-400">
+      <p className="text-xl text-ellipsis text-center md:text-2xl text-slate-400 p-2">
         In this webinar you will learn how to use institutional order flow
         techniques to catch the biggest moves with the highest risk reward
         ratio, consistently in the markets.
@@ -30,7 +30,7 @@ export default JoinWebinar;
 const UpcomingWebinar = () => {
   return (
     <div className="  rounded-3xl overflow-hidden shadow-lg my-4 border-4 border-transparent bg-gradient-to-r from-[#cdff64] via-[#66d6ad] to-[#13b5e8] ">
-      <div className="w-full h-full bg-black rounded-3xl px-30 py-50 text-center">
+      <div className="w-full h-full bg-black rounded-3xl px-25 py-50 text-center">
         <div className="px-6 py-4">
           <div className="font-bold text-2xl md:text-6xl mb-2 py-8">
             Upcoming Webinar
@@ -58,7 +58,7 @@ const UpcomingWebinar = () => {
 const WebinarBounes = () => {
   return (
     <div className="  rounded-3xl overflow-hidden shadow-lg my-4 border-4 border-transparent bg-gradient-to-r from-[#cdff64] via-[#66d6ad] to-[#13b5e8] ">
-      <div className="w-full h-full bg-black rounded-3xl px-30 py-50 text-center">
+      <div className="w-full h-full bg-black rounded-3xl px-25 py-50 text-center">
         <div className="px-6 py-4">
           <div className="font-bold text-2xl md:text-6xl mb-2 p-8">
           Webinar Bonuses

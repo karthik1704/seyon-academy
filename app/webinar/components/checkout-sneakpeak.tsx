@@ -5,9 +5,9 @@ import Link from "next/link";
 import { WEBINAR_URL } from "@/app/constants";
 
 const images = [
-  "/images/other/1.jpg",
-  "/images/other/2.jpg",
-  "/images/other/3.png",
+  "/images/3.2.avif",
+  "/images/3.3.avif",
+  "/images/3.4.avif",
 ];
 
 const CheckoutSneakpeak = () => {
@@ -37,7 +37,7 @@ const CheckoutSneakpeak = () => {
 
   return (
     <div className="text-center mt-4 container flex flex-col items-center justify-center mx-auto mb-10">
-      <h2 className="text-xl font-semibold text-center inline-block md:text-5xl capitalize mb-4">
+      <h2 className="text-2xl font-semibold text-center inline-block md:text-5xl capitalize mb-4">
         Check Out My Class Sessions
         <br />
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#cdff64] via-[#66d6ad] to-[#13b5e8]">
