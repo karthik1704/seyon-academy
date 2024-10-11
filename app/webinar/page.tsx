@@ -36,7 +36,7 @@ const WebinarPage = async () => {
       <JoinWebinar/>
       <YouShouldAttend/>
       <YourCoach/>
-      <HearFromStudents/>
+      {/* <HearFromStudents/> */}
       <TimeTicking />
       <Faq/>
       <Footer/>
