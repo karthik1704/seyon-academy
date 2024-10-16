@@ -23,7 +23,7 @@ const Header: React.FC = () => {
           </Link>
         </nav> */}
         <div className="md:hidden">
-        <div className="flex justify-center space-x-4 mb-4 mt-2">
+        <div className="flex justify-center items-center space-x-4 mb-4 mt-2">
         {/* <a
           href="https://www.instagram.com/seyon_academy_"
           target="_blank"

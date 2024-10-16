@@ -25,7 +25,7 @@ const HeroSection = () => {
 
   return (
     <section className="mt-7 p-4 container mx-auto flex items-center justify-center flex-col">
-      <h1 className="text-2xl font-semibold text-center inline-block md:text-6xl capitalize">
+      <h1 className="text-3xl font-semibold text-center inline-block md:text-6xl capitalize">
       Master NEET Physics <br />
         <span
           className={`bg-clip-text text-transparent bg-gradient-to-r from-[#cdff64] via-[#66d6ad] to-[#13b5e8] transition-opacity duration-500 ease-in-out transform ${
