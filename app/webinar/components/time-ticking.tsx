@@ -25,8 +25,8 @@ const TimeTicking = () => {
 
   return (
     <div className="mx-auto w-full  mt-10 p-5 md:p-10">
-      <div className="p-5 border  rounded-lg shadow-lg text-center ">
-        <h2 className="text-xl font-semibold text-center md:text-5xl capitalize mb-4">
+      <div className="p-5 border  rounded-3xl shadow-lg text-center ">
+        <h2 className="text-3xl font-semibold text-center md:text-5xl capitalize mb-4">
           Time Is{" "}
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#cdff64] via-[#66d6ad] to-[#13b5e8]">
             Ticking
@@ -36,12 +36,12 @@ const TimeTicking = () => {
           Don&apos;t miss out on something truly exceptional!
         </p>
         <div className="p-4">
-          <h1 className="text-6xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
+          <h1 className="text-7xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
             {formatTime(time)}
           </h1>
           <div>
 
-          <p className="border border-red-500 bg-red-500 text-white rounded-full px-4 py-2 mt-4 w-[100%]">
+          <p className="border  border-red-500 bg-red-900 text-white rounded-full px-4 py-2 mt-4 w-[100%]">
         Last Few Seats Left! Grab Your Seats Now
       </p>
           </div>
@@ -53,7 +53,7 @@ const TimeTicking = () => {
           >
             Register Now
           </Link>
-          <p className="text-lg text-slate-400">(Offer expires in 10 minutes, Hurry Up!)</p>
+          <p className="text-lg text-slate-400 py-1">(Offer expires in 10 minutes, Hurry Up!)</p>
       </div>
     </div>
   );

@@ -6,8 +6,8 @@ import { WEBINAR_URL } from "@/app/constants";
 import Link from "next/link";
 
 const images = [
-  "/images/other/1.jpg",
-  "/images/other/2.jpg",
+  // "/images/other/1.jpg",
+  // "/images/other/2.jpg",
   "/images/other/3.png",
 ];
 
@@ -39,7 +39,7 @@ const WeHelp = () => {
   return (
     <div className="mx-auto w-full mt-24 ">
       <div className="flex flex-col  justify-center items-center mx-auto">
-        <h2 className="text-2xl font-semibold text-center inline-block md:text-5xl capitalize mb-4">
+        <h2 className="text-4xl font-semibold text-center inline-block md:text-5xl capitalize mb-4">
           We Help Students To Accelerate Their
           <br />
           <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#cdff64] via-[#66d6ad] to-[#13b5e8]">

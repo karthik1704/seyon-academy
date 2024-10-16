@@ -21,7 +21,7 @@ const cardData = [
 
 const Card = ({ title, image }: CardProps) => {
   return (
-    <div className="flex flex-col items-center justify-center  border border-transparent rounded-3xl shadow-lg w-full md:w-[300px] md:h-[300px] hover:bg-clip-border hover:bg-gradient-to-r hover:from-[#12FFD4] hover:to-[#9BF170] ">
+    <div className="flex  md:flex-col items-center justify-center  border border-transparent rounded-3xl shadow-lg w-full md:w-[300px] md:h-[300px] hover:bg-clip-border hover:bg-gradient-to-r hover:from-[#12FFD4] hover:to-[#9BF170] ">
       <div className="bg-black  hover:border-transparent p-4 rounded-3xl text-center h-full">
         <div className="flex justify-center items-center">
 
@@ -38,7 +38,7 @@ const Card = ({ title, image }: CardProps) => {
 const AttendingWebinar = () => {
   return (
     <div className="flex justify-center items-center flex-col mx-auto mt-8">
-      <h2 className="text-2xl font-semibold text-center inline-block md:text-5xl capitalize mb-4">
+      <h2 className="text-4xl font-semibold text-center inline-block md:text-5xl capitalize mb-4">
         After Attending This Webinar
         <br />
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#cdff64] via-[#66d6ad] to-[#13b5e8]">

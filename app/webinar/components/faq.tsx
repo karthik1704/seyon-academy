@@ -27,7 +27,7 @@ const Faq = () => {
 
   return (
     <div className="max-w-2xl mx-auto p-4">
-      <h2 className="text-xl font-semibold text-center md:text-5xl capitalize mb-4">
+      <h2 className="text-4xl font-semibold text-center md:text-5xl capitalize mb-4">
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#cdff64] via-[#66d6ad] to-[#13b5e8]">
           FAQ
         </span>

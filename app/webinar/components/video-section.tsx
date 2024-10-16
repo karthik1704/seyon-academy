@@ -20,7 +20,7 @@ const VideoSection = () => {
           </div>
           
           <div className="">
-            <h2 className="text-2xl font-semibold capitalize">
+            <h2 className="text-2xl font-semibold capitalize text-center">
               <span className="text-[#58FF29] text-3xl ">
                 {" "}
                 #1<sup className="lowercase">st</sup>
@@ -64,7 +64,7 @@ const VideoSection = () => {
             target="_blank"
             className="bg-gradient-to-b  from-[#29e337] to-[#76ff80] shadow-[0_0_30px_1px_rgb(82_237_38_/_40%)] p-4 rounded-md w-full block font-bold text-black md:p-4 md:text-xl "
           >
-            Signup Now
+            Register Now
           </Link>
         </div>
       </div>

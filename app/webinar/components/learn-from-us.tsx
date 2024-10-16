@@ -24,7 +24,7 @@ const cardData = [
 const LearnFromUs = () => {
   return (
     <div className="text-center mt-4 container flex flex-col items-center justify-center mx-auto mb-10">
-      <h2 className="text-2xl font-semibold text-center inline-block md:text-5xl capitalize mb-4">
+      <h2 className="text-4xl font-semibold text-center inline-block md:text-5xl capitalize mb-4">
         What Will You Learn <br />
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#cdff64] via-[#66d6ad] to-[#13b5e8]">
           In This Webinar ?

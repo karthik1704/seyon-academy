@@ -3,8 +3,8 @@ import Link from "next/link";
 
 const JoinWebinar = () => {
   return (
-    <div className="flex flex-col items-center  mt-40 p-1">
-      <h2 className="text-2xl font-semibold text-center inline-block md:text-5xl capitalize mb-4">
+    <div className="flex flex-col items-center  mt-20 p-1">
+      <h2 className="text-4xl font-semibold text-center inline-block md:text-5xl capitalize mb-4">
         Get To Know The Best Methods To Get Good Marks In Neet Physics Before
         <br />
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#cdff64] via-[#66d6ad] to-[#13b5e8]">
@@ -30,12 +30,12 @@ export default JoinWebinar;
 const UpcomingWebinar = () => {
   return (
     <div className="  rounded-3xl overflow-hidden shadow-lg my-4 border-4 border-transparent bg-gradient-to-r from-[#cdff64] via-[#66d6ad] to-[#13b5e8] ">
-      <div className="w-full h-full bg-black rounded-3xl px-25 py-50 text-center">
+      <div className="w-full h-full bg-black rounded-3xl px-25 py-50 text-center p-2">
         <div className="px-6 py-4">
-          <div className="font-bold text-2xl md:text-6xl mb-2 py-8">
+          <div className="font-bold text-4xl md:text-6xl mb-2 py-8">
             Upcoming Webinar
           </div>
-          <p className="text-gray-700 text-base">Date & Time</p>
+          <p className="text-gray-700 text-lg">Date & Time</p>
           <p className="font-semibold text-xl">{WEBINAR_DATETIME}</p>
           <p className="text-gray-700 text-lg md:text-xl font-semibold">
             (Seats Are Filling Very Fast)
@@ -47,7 +47,7 @@ const UpcomingWebinar = () => {
             target="_blank"
             className="bg-gradient-to-b  from-[#29e337] to-[#76ff80] shadow-[0_0_30px_1px_rgb(82_237_38_/_40%)] p-4 rounded-md w-full block font-bold text-black md:p-4 md:text-xl "
           >
-            Buy Now
+            Register Now
           </Link>
         </div>
       </div>
@@ -58,9 +58,9 @@ const UpcomingWebinar = () => {
 const WebinarBounes = () => {
   return (
     <div className="  rounded-3xl overflow-hidden shadow-lg my-4 border-4 border-transparent bg-gradient-to-r from-[#cdff64] via-[#66d6ad] to-[#13b5e8] ">
-      <div className="w-full h-full bg-black rounded-3xl px-25 py-50 text-center">
+      <div className="w-full h-full bg-black rounded-3xl px-25 py-50 text-center p-2">
         <div className="px-6 py-4">
-          <div className="font-bold text-2xl md:text-6xl mb-2 p-8">
+          <div className="font-bold text-4xl md:text-6xl mb-2 p-8">
           Webinar Bonuses
           </div>
           
@@ -107,8 +107,8 @@ const WebinarBounes = () => {
             target="_blank"
             className="bg-gradient-to-b  from-[#29e337] to-[#76ff80] shadow-[0_0_30px_1px_rgb(82_237_38_/_40%)] p-4 rounded-md w-full block font-bold text-black md:p-4 md:text-xl "
           >
-            Buy Now
-          </Link>
+            Register Now
+            </Link>
         </div>
       </div>
     </div>

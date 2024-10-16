@@ -37,7 +37,7 @@ const CheckoutSneakpeak = () => {
 
   return (
     <div className="text-center mt-4 container flex flex-col items-center justify-center mx-auto mb-10">
-      <h2 className="text-2xl font-semibold text-center inline-block md:text-5xl capitalize mb-4">
+      <h2 className="text-4xl font-semibold text-center inline-block md:text-5xl capitalize mb-4">
         Check Out My Class Sessions
         <br />
         <span className="bg-clip-text text-transparent bg-gradient-to-r from-[#cdff64] via-[#66d6ad] to-[#13b5e8]">
@@ -77,7 +77,7 @@ const CheckoutSneakpeak = () => {
         >
           Learn From Bala
         </Link>
-        <p className="text-center  capitalize mt-4 text-sm">
+        <p className="text-center  capitalize mt-4 p-1 text-base">
           ( 8 + Years of Physics Teaching Experience, 6+ Years Of Neet Physics
           Coaching Experience )
         </p>
