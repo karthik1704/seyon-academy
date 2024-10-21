@@ -125,7 +125,7 @@ const TermsAndConditions = () => {
 
       <h2 className="text-xl font-semibold mb-2">9. Contact Us</h2>
       <p className="mb-4">
-        If you have any questions or concerns about this policy, please contact us at <a href="mailto:contact@seyonacademy.com" className="text-blue-500">contact@seyonacademy.com</a>.
+        If you have any questions or concerns about this policy, please contact us at <a href="mailto:info@seyonacademy.com" className="text-blue-500">info@seyonacademy.com</a>.
       </p>
     </div>
   );
