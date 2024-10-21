@@ -1,5 +1,6 @@
 import { LOGO_ALT, LOGO_URL } from "@/app/constants";
 import Image from "next/image";
+import Link from "next/link";
 
 
 const Footer = () => {
@@ -14,6 +15,9 @@ const Footer = () => {
           height={50}
         />
         <h1 className="text-2xl font-semibold">Seyon Academy</h1>
+      </div>
+      <div className="text-center mt-4 mb-8">
+        <Link href='/terms-conditions' className="text-lg font-semibold">Terms & Conditions</Link>
       </div>
       <p className="text-lg mt-6">Follow us on:</p>
       <div className="flex justify-center space-x-4 mb-4 mt-2">
@@ -42,6 +46,7 @@ const Footer = () => {
           />
         </a>
       </div>
+     
     <div className="text-center mt-4 mb-8">
         <h2 className="text-lg font-semibold">Disclaimer</h2>
         <p className="text-sm mt-2">
