@@ -123,7 +123,7 @@ const WebinarBounes = () => {
             </span>
           </div>
         </div>
-        <div className="px-6 pt-4 pb-2">
+        <div className="px-6 pt-4 pb-2 text-center">
           <Link
             href={WEBINAR_URL}
             target="_blank"
