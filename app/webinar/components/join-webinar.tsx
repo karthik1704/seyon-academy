@@ -58,48 +58,70 @@ const UpcomingWebinar = () => {
 const WebinarBounes = () => {
   return (
     <div className="  rounded-3xl overflow-hidden shadow-lg my-4 border-4 border-transparent bg-gradient-to-r from-[#cdff64] via-[#66d6ad] to-[#13b5e8] ">
-      <div className="w-full h-full bg-black rounded-3xl px-25 py-50 text-center p-2">
+      <div className="w-full h-full bg-black rounded-3xl px-25 py-50  p-2">
         <div className="px-6 py-4">
-          <div className="font-bold text-4xl md:text-6xl mb-2 p-8">
-          Webinar Bonuses
+          <div className="font-bold text-4xl md:text-6xl mb-2 p-8 text-center">
+            Webinar Bonuses
           </div>
-          
         </div>
         <div className="px-6 py-4">
-            <div className="flex items-center mb-2">
-                <svg
-                    className="w-6 h-6 text-green-500 mr-2"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M5 13l4 4L19 7"
-                    ></path>
-                </svg>
-                <span className="font-semibold text-lg">Free Ebook</span>
-            </div>
-            <div className="flex items-center mb-2">
-                <svg
-                    className="w-6 h-6 text-green-500 mr-2"
-                    fill="none"
-                    stroke="currentColor"
-                    viewBox="0 0 24 24"
-                    xmlns="http://www.w3.org/2000/svg"
-                >
-                    <path
-                        strokeLinecap="round"
-                        strokeLinejoin="round"
-                        strokeWidth="2"
-                        d="M5 13l4 4L19 7"
-                    ></path>
-                </svg>
-                <span className="font-semibold text-lg">Source Material</span>
-            </div>
+          <div className="flex items-center mb-2">
+            <svg
+              className="w-6 h-6 text-green-500 mr-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M5 13l4 4L19 7"
+              ></path>
+            </svg>
+            <span className="font-semibold text-lg">
+              NEET physics total study materials{" "}
+            </span>
+          </div>
+          <div className="flex items-center mb-2">
+            <svg
+              className="w-6 h-6 text-green-500 mr-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M5 13l4 4L19 7"
+              ></path>
+            </svg>
+            <span className="font-semibold text-lg">
+              NEET formulas digital materials{" "}
+            </span>
+          </div>
+          <div className="flex items-center mb-2">
+            <svg
+              className="w-6 h-6 text-green-500 mr-2"
+              fill="none"
+              stroke="currentColor"
+              viewBox="0 0 24 24"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                strokeLinecap="round"
+                strokeLinejoin="round"
+                strokeWidth="2"
+                d="M5 13l4 4L19 7"
+              ></path>
+            </svg>
+            <span className="font-semibold text-lg">
+              Previous year question papers (Physics)
+            </span>
+          </div>
         </div>
         <div className="px-6 pt-4 pb-2">
           <Link
@@ -108,7 +130,7 @@ const WebinarBounes = () => {
             className="bg-gradient-to-b  from-[#29e337] to-[#76ff80] shadow-[0_0_30px_1px_rgb(82_237_38_/_40%)] p-4 rounded-md w-full block font-bold text-black md:p-4 md:text-xl "
           >
             Register Now
-            </Link>
+          </Link>
         </div>
       </div>
     </div>

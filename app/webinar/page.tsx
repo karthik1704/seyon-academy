@@ -14,6 +14,7 @@ import HearFromStudents from "./components/hear-from-students";
 import TimeTicking from "./components/time-ticking";
 import Faq from "./components/faq";
 import Footer from "./components/footer";
+import StickyButton from "./components/sticky-button";
 
 export const generateMetadata = (): Metadata => ({
   title: "Webinar | Seyon Academy",
@@ -40,6 +41,7 @@ const WebinarPage = async () => {
       <TimeTicking />
       <Faq/>
       <Footer/>
+      <StickyButton/>
     </div>
   );
 };

@@ -29,11 +29,12 @@ const HeroSection = () => {
       Master NEET Physics <br />
         <span
           className={`bg-clip-text text-transparent bg-gradient-to-r from-[#cdff64] via-[#66d6ad] to-[#13b5e8] transition-opacity duration-500 ease-in-out transform ${
-            fadeIn ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2"
+            fadeIn ? "opacity-100 translate-y-0" : "opacity-0 -translate-y-2" 
           }`}
         >
           {text}
-        </span><br />
+        </span>
+        <br />
        <span> &</span>
         <span className="block "> Achieve Your Dream of Becoming a Doctor! </span>
           </h1>
