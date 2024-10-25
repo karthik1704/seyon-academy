@@ -35,25 +35,28 @@ const TimeTicking = () => {
         <p className="text-lg text-slate-400">
           Don&apos;t miss out on something truly exceptional!
         </p>
-        <div className="p-4">
+        <div className="p-4 ">
           <h1 className="text-7xl font-bold bg-gradient-to-r from-blue-500 to-purple-500 text-transparent bg-clip-text">
             {formatTime(time)}
           </h1>
-          <div>
-
-          <p className="border  border-red-500 bg-red-900 text-white rounded-full px-4 py-2 mt-4 w-[100%]">
-        Last Few Seats Left! Grab Your Seats Now
-      </p>
+          <div className="flex flex-col items-center">
+            <p className="border  border-red-500 bg-red-900 text-white rounded-full px-4 py-2 mt-4 w-[100%] md:w-1/4">
+              Last Few Seats Left! Grab Your Seats Now
+            </p>
           </div>
         </div>
+        <div className="flex flex-col items-center">
         <Link
-            href={WEBINAR_URL}
-            target="_blank"
-            className="bg-gradient-to-b  from-[#29e337] to-[#76ff80] shadow-[0_0_30px_1px_rgb(82_237_38_/_40%)] p-4 rounded-md w-full block font-bold text-black md:p-4 md:text-xl "
-          >
-            Register Now
-          </Link>
-          <p className="text-lg text-slate-400 py-1">(Offer expires in 10 minutes, Hurry Up!)</p>
+          href={WEBINAR_URL}
+          target="_blank"
+          className="bg-gradient-to-b  from-[#29e337] to-[#76ff80] shadow-[0_0_30px_1px_rgb(82_237_38_/_40%)] p-4 rounded-md w-full md:w-1/2 block font-bold text-black md:p-4 md:text-xl "
+        >
+          Register Now
+        </Link>
+        <p className="text-lg text-slate-400 py-1">
+          (Offer expires in 10 minutes, Hurry Up!)
+        </p>
+        </div>
       </div>
     </div>
   );
