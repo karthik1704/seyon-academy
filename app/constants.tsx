@@ -1,8 +1,8 @@
 
 
 
-export const WEBINAR_DATETIME = 'Nov 6, 2024 03 PM';
-export const WEBINAR_DAY = 'WEDNESDAY';
+export const WEBINAR_DATETIME = 'Nov 3, 2024 03 PM';
+export const WEBINAR_DAY = 'SUNDAY';
 export const WEBINAR_TIMING = '03 to 06 PM';
 export const WEBINAR_URL = 'https://imjo.in/e4Za96';
 
