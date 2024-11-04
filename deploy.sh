@@ -1,5 +1,5 @@
 #!/bin/bash
-echo "hello1"
+echo "hello12"
 # Navigate to your application directory
 cd ./seyon-academy
 
