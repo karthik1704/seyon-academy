@@ -1,5 +1,5 @@
 #!/bin/bash
-
+echo "ho"
 # Navigate to your application directory
 cd $APP_PATH
 
