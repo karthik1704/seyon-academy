@@ -28,4 +28,4 @@ jobs:
           APP_PATH: ${{ secrets.APP_PATH }}
           APP_NAME: ${{ secrets.APP_NAME }}
         run: |
-          ssh -o StrictHostKeyChecking=no $VPS_USER@$VPS_IP 'bash -s' < ./deploy.sh
+          ssh -o StrictHostKeyChecking=no $VPS_USER@$VPS_IP 'bash ./deploy.sh'
