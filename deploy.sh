@@ -1,7 +1,7 @@
 #!/bin/bash
 echo "ho"
 # Navigate to your application directory
-cd $APP_PATH
+cd ./seyon-academy
 
 # Pull the latest changes
 git pull origin main
@@ -11,4 +11,6 @@ npm install
 npm run build
 
 # Restart your application (e.g., using PM2)
-pm2 restart $APP_NAME
+pm2 restart seyon
+
+echo "complete"
