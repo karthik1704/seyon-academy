@@ -25,7 +25,7 @@ const StudentSigninForm = () => {
     const [state, formAction] = useActionState(signinJwt, initialState);
 
     return(
-        <form action={formAction} method="POST" className="space-y-6">
+        <form action={formAction} className="space-y-6">
         <div>
           <label htmlFor="email" className="block text-sm/6 font-medium text-gray-900">
             Registration Number

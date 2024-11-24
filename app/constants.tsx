@@ -1,6 +1,7 @@
 
 
-export const SERVER_API_URL = 'http://localhost:8000'
+// export const SERVER_API_URL = 'http://localhost:8000';
+export const SERVER_API_URL = 'https://api.seyonacademy.com';
 
 export const WEBINAR_DATETIME = 'Nov 10, 2024 03 PM';
 export const WEBINAR_DAY = 'SUNDAY';

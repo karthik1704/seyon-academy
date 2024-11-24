@@ -1,8 +1,12 @@
+import { getCurrentStudent } from "@/services/students";
 
 
 
 export default async function StudentDashboardPage() {
+
+    const student = await getCurrentStudent();
+
     return(
-        <div>HI</div>
+        <div>{student.first_name}</div>
     )
 }
