@@ -2,7 +2,7 @@
 import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
-import { LOGO_URL } from "@/app/constants";
+import { LOGO_URL, SERVER_API_URL, SERVER_IMAGE_URL } from "@/app/constants";
 // import ClickOutside from "@/components/ClickOutside";
 
 const DropdownUser = ({user}) => {
@@ -27,12 +27,13 @@ const DropdownUser = ({user}) => {
           <Image
             width={70}
             height={70}
-            src={LOGO_URL}
+            src={`${SERVER_IMAGE_URL}${user.student_profile?.student_photo}` }
             style={{
               width: "auto",
               height: "auto",
             }}
             alt="User"
+            className="rounded-full"
           />
         </span>
 

@@ -39,9 +39,9 @@ const items = [
   },
 ]
 
-export function AppSidebar() {
+export async function  AppSidebar() {
   return (
-    <Sidebar className="bg-white">
+    <Sidebar className="bg-white shadow-md">
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupContent>
