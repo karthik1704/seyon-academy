@@ -97,3 +97,9 @@ export async function signinJwt(prevState: StateType, formData: FormData) {
 
   redirect("/students/dashboard");
 }
+
+
+export const logout = async () => {
+  (await cookies()).delete("access");
+  redirect("/students");
+}

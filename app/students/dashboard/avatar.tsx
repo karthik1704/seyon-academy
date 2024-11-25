@@ -3,9 +3,11 @@ import { useState } from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { LOGO_URL, SERVER_API_URL, SERVER_IMAGE_URL } from "@/app/constants";
+import { StudentType } from "@/types/students";
+import { logout } from "../actions";
 // import ClickOutside from "@/components/ClickOutside";
 
-const DropdownUser = ({user}) => {
+const DropdownUser = ({user}:{user:StudentType}) => {
   const [dropdownOpen, setDropdownOpen] = useState(false);
 
   return (
@@ -20,7 +22,7 @@ const DropdownUser = ({user}) => {
           <span className="block text-sm font-medium text-black dark:text-white">
             {user?.first_name ?? ""} {user?.last_name ?? ""}
           </span>
-          <span className="block text-xs">UX Designer</span>
+          <span className="block text-xs">{user?.batch.batch_name}</span>
         </span>
 
         <span className="h-8 w-8 rounded-full">
@@ -59,7 +61,7 @@ const DropdownUser = ({user}) => {
         <div
           className={`absolute right-0 mt-4 flex w-62.5 flex-col rounded-sm border border-stroke bg-white shadow-default dark:border-strokedark dark:bg-boxdark`}
         >
-          <ul className="flex flex-col gap-5 border-b border-stroke px-6 py-7.5 dark:border-strokedark">
+          {/* <ul className="flex flex-col gap-5 border-b border-stroke px-6 py-7.5 dark:border-strokedark">
             <li>
               <Link
                 href="/profile"
@@ -131,8 +133,8 @@ const DropdownUser = ({user}) => {
                 Account Settings
               </Link>
             </li>
-          </ul>
-          <button className="flex items-center gap-3.5 px-6 py-4 text-sm font-medium duration-300 ease-in-out hover:text-primary lg:text-base">
+          </ul> */}
+          <button className="flex items-center gap-3.5 px-6 py-4 text-sm font-medium duration-300 ease-in-out hover:text-primary lg:text-base" onClick={logout}>
             <svg
               className="fill-current"
               width="22"

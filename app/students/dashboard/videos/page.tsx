@@ -18,9 +18,9 @@ export default async function VideosPage() {
                         <div className="aspect-w-16 aspect-h-12">
                             <iframe
                                 className="w-full h-80 rounded-lg"
-                                src={"https://www.youtube.com/embed/dv5z2ImiEPo?si=qo1IJYTJSJtR26E3"}
+                                src={`${video.video_link}?modestbranding=1&showinfo=0&rel=0&controls=1`}
                                 title={video.video_title}
-                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                                allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
                                 allowFullScreen
                             ></iframe>
                         </div>
