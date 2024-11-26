@@ -19,7 +19,7 @@ export default function Home() {
           WhatsApp Us
         </Link>
       </div>
-      <div className="bg-[url('/images/home/banner_website_home.png')] bg-cover  bg-center h-full">
+      <div className="bg-[url('/images/home/banner_website_home_1.png')] bg-cover  bg-center h-full">
         <nav className="bg-transparent p-4">
           <div className="container mx-auto flex justify-between items-center">
             <div className="">
@@ -67,13 +67,13 @@ export default function Home() {
         <section className="container mx-auto flex justify-center items-start  h-full">
           <div className="hidden md:flex justify-center items-end h-[70%] w-full ">
             <div className="overflow-hidden h-[340px] w-[250px] rounded-full relative  border-blue-500">
-              <Image
+              {/* <Image
                 src="/images/home/school_girl_image.png"
                 width={250}
                 height={200}
                 alt="seyon student"
                 className="object-cover object-bottom rounded-full"
-              />
+              /> */}
             </div>
           </div>
           <div className="w-full h-auto  md:h-[80%] flex justify-center items-center">
