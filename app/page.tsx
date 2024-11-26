@@ -12,7 +12,7 @@ export default function Home() {
           WHATSAPP NOW / CALL US - ADMISSION FOR 9TH TO 10TH AND 11TH TO 12TH IS GOING NOW, HURRY UP JOIN RIGHT NOW LIMITED SEATS ONLY
         </div>
         <Link
-          href="https://wa.me/919994000000"
+          href="https://wa.me/919342261389"
           target="_blank"
           className="bg-white px-4 py-2 rounded-full hover:bg-green-50  text-xs text-green-600"
         >
