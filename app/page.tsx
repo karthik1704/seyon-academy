@@ -25,7 +25,7 @@ export default function Home() {
             <div className="">
               <Link href="/">
               <Image
-                src="/images/home/seyon_logo.png"
+                src="/images/home/seyon_logo1.png"
                 width={150}
                 height={100}
                 alt="seyon academy"

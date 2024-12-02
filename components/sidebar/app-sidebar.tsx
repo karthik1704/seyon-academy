@@ -49,9 +49,9 @@ export async function  AppSidebar() {
               <Image
                 src={LOGO_URL}
                 alt="Logo"
-                width={48}
-                height={48}
-                className="h-17 w-15"
+                width={100}
+                height={100}
+                className="h-22 w-18"
               />
               <h2 className="text-2xl font-semibold text-gray-900">Seyon Academy</h2>
             </div>
