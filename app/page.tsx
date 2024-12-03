@@ -1,4 +1,5 @@
 import Footer from "@/components/footer";
+import LearningPrograms from "@/components/home/learning-programs";
 import Select from "@/components/select";
 import Image from "next/image";
 import Link from "next/link";
@@ -185,6 +186,10 @@ export default function Home() {
           </div>
         </section>
       </div>
+
+      {/* Card Section */}
+
+      <LearningPrograms />
      
     </div>
      <Footer />
