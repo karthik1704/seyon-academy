@@ -63,7 +63,7 @@ const programs = [
   },
 
   {
-    id: 6,
+    id: 8,
     title: "Phoenix",
     description: "Seyon online physics batch",
     image:
