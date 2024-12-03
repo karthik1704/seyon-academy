@@ -111,7 +111,7 @@ export default function LearningPrograms() {
                     fill
                     className="object-cover rounded-t-lg"
                   />
-                  <div className="absolute top-4 left-4 bg-purple-100 text-purple-800 px-3 py-1 rounded-full text-sm font-medium">
+                  <div className="absolute top-4 left-4 bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
                     {program.badge}
                   </div>
                 </div>
@@ -122,7 +122,7 @@ export default function LearningPrograms() {
                   <p className="text-gray-600 mb-4">{program.description}</p>
                   <Button
                     variant="link"
-                    className="text-purple-600 hover:text-purple-800 p-0"
+                    className="text-green-600 hover:text-green-800 p-0"
                   >
                     Read more
                   </Button>
