@@ -22,12 +22,12 @@ const items = [
     icon: Home,
   },
   {
-    title: "Notes",
+    title: "Read",
     url: "/students/dashboard/notes",
     icon: NotebookTabs,
   },
   {
-    title: "Videos",
+    title: "Watch",
     url: "/students/dashboard/videos",
     icon: MonitorPlay,
   },
