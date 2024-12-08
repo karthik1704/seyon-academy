@@ -102,18 +102,18 @@ export default function LearningPrograms() {
           className="grid grid-flow-col auto-cols-max gap-6 overflow-x-auto scrollbar-hide scroll-smooth"
         >
           {programs.map((program) => (
-            <Card key={program.id} className="w-[300px] bg-white shadow-lg">
+            <Card key={program.id} className="w-[350px] bg-white shadow-lg">
               <CardContent className="p-0">
-                <div className="relative h-[200px]">
+                <div className="relative h-[250px]">
                   <Image
                     src={program.image}
                     alt={program.title}
                     fill
-                    className="object-cover rounded-t-lg"
+                    className="object-contains rounded-t-lg"
                   />
-                  <div className="absolute top-4 left-4 bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
+                  {/* <div className="absolute top-4 left-4 bg-green-100 text-green-800 px-3 py-1 rounded-full text-sm font-medium">
                     {program.badge}
-                  </div>
+                  </div> */}
                 </div>
                 <div className="p-4">
                   <h3 className="font-semibold text-lg mb-2">

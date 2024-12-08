@@ -12,7 +12,7 @@ import {
 } from "@/components/ui/sidebar";
 import Link from "next/link";
 import Image from "next/image";
-import { LOGO_URL } from "@/app/constants";
+import { DASHBOARD_LOGO_URL, LOGO_URL } from "@/app/constants";
 
 // Menu items.
 const items = [
@@ -53,7 +53,7 @@ export async function AppSidebar() {
           <SidebarGroupContent>
             <div className="flex flex-col gap-4 items-center justify-center p-4">
               <Image
-                src={LOGO_URL}
+                src={DASHBOARD_LOGO_URL}
                 alt="Logo"
                 width={100}
                 height={100}

@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { LOGO_URL } from "../constants";
+import { DASHBOARD_LOGO_URL, LOGO_URL } from "../constants";
 import StudentSigninForm from "./student-signin-form";
 import Image from "next/image";
 
@@ -16,7 +16,7 @@ export default async function StudentPage() {
         width={150}
         height={200}
           alt="Seyon Academy Logo"
-          src={LOGO_URL}
+          src={DASHBOARD_LOGO_URL}
           className="mx-auto  w-auto"
         />
         <h2 className="mt-10 text-center text-2xl/9 font-bold tracking-tight text-gray-900">

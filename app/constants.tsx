@@ -10,6 +10,7 @@ export const WEBINAR_TIMING = '03 to 06 PM';
 export const WEBINAR_URL = 'https://imjo.in/e4Za96';
 
 export const LOGO_URL = '/images/logo/seyon_logo1.png';
+export const DASHBOARD_LOGO_URL = '/images/logo/logo_4.png';
 export const LOGO_ALT = 'Seyon Academy Logo';
 
 export const VIDEO_SECTION_IMAGE_JPG = '/images/1.jpg';

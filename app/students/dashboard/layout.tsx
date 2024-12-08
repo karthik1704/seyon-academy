@@ -17,7 +17,7 @@ export default async function Layout({
     <SidebarProvider>
       <AppSidebar />
       <main className="w-full">
-        <nav className="flex items-center justify-between border-b px-6 py-4 shadow-md">
+        <nav className="flex items-center justify-between border-b px-6 py-4 shadow-md bg-green-300">
           <SidebarTrigger />
           <div className="flex items-center space-x-4">
             <Link className="flex items-center space-x-2" href={"#"} target="_blank">
