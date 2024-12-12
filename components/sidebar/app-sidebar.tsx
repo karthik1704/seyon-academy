@@ -37,6 +37,16 @@ const items = [
     url: "#",
     icon: "/images/menu/test.png",
   },
+  {
+    title: "Inbox",
+    url: "#",
+    icon: "/images/menu/inbox.png",
+  },
+  {
+    title: "Notifications",
+    url: "#",
+    icon: "/images/menu/notification.png",
+  },
 
   {
     title: "Settings",
