@@ -12,7 +12,7 @@ export default async function NotesFilesAndFolderPage({ params }: Props) {
   const { ids } = await params;
   console.log(ids);
   if (ids.length === 0) {
-    redirect("/students/dashboard/notes");
+    redirect("/students/dashboard/videos");
   }
   const { children, videos } = await getVideosByFolder(ids.at(-1) as string);
 
