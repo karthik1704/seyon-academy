@@ -75,7 +75,7 @@ export const getNotesByFolder = async (id:string) => {
         redirect('/students');
     }
 
-    const response = await fetch(`${SERVER_API_URL}/notes/student/folders/${id}`, {
+    const response = await fetch(`${SERVER_API_URL}/notes/student/folders/${id}/`, {
         headers: {
             'content-type': 'application/json',
             'Authorization': `Bearer ${access.value}`

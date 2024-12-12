@@ -47,7 +47,7 @@ export const getVideosByFolder = async (id:string) => {
         redirect('/students');
     }
 
-    const response = await fetch(`${SERVER_API_URL}/videos/student/folders/${id}`, {
+    const response = await fetch(`${SERVER_API_URL}/videos/student/folders/${id}/`, {
         headers: {
             'content-type': 'application/json',
             'Authorization': `Bearer ${access.value}`
@@ -55,6 +55,7 @@ export const getVideosByFolder = async (id:string) => {
     });
 
     if (response.status === 401) {
+        console.log('Failed to fetch videos');
         redirect('/students');
     }
 
