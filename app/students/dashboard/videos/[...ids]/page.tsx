@@ -1,27 +1,34 @@
-import { getVideos, getVideosFolders } from "@/services/videos";
+import { getVideosByFolder } from "@/services/videos";
 import { VideoType } from "@/types/videos";
-import { Folder } from "lucide-react";
+import {  Folder } from "lucide-react";
 import Link from "next/link";
+import { redirect } from "next/navigation";
 
-export default async function VideosPage() {
-  const videos: VideoType[] = await getVideos();
-  const videosFolders = await getVideosFolders();
+interface Props {
+  params: Promise<{ ids: string[] }>;
+}
+
+export default async function NotesFilesAndFolderPage({ params }: Props) {
+  const { ids } = await params;
+  console.log(ids);
+  if (ids.length === 0) {
+    redirect("/students/dashboard/notes");
+  }
+  const { children, videos } = await getVideosByFolder(ids.at(-1) as string);
 
   return (
-    <div>
-      <div className="flex gap-6 p-5 ">
-        {videosFolders.map((folder) => (
-          <Link key={folder.id} href={`videos/${folder.id}`}>
+    <div className="flex gap-6 p-5 ">
+      {!!children &&
+        children.map((folder) => (
+          <Link key={folder.id} href={`${folder.id}`}>
             <div className="flex flex-col items-center  bg-white p-1    hover:shadow-red-100 active:scale-50">
               <Folder size={120} className="text-green-300" />
               <h2 className=" font-semibold">{folder.category_name}</h2>
             </div>
           </Link>
         ))}
-      </div>
-
-      <div className="flex flex-col md:flex-row p-6 gap-6 w-full h-full">
-        {videos.map((video: VideoType) => (
+      {!!videos &&
+        videos.map((video: VideoType) => (
           <div
             key={video.id}
             className="bg-white shadow-lg rounded-lg p-4 mb-4 w-full md:w-1/3 "
@@ -39,7 +46,6 @@ export default async function VideosPage() {
             </div>
           </div>
         ))}
-      </div>
     </div>
   );
 }
