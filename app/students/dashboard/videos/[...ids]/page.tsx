@@ -1,7 +1,9 @@
+import { SERVER_IMAGE_URL } from "@/app/constants";
 import { getVideosByFolder } from "@/services/videos";
 import { VideoType } from "@/types/videos";
-import {  Folder } from "lucide-react";
+import { Folder } from "lucide-react";
 import Link from "next/link";
+import Image from "next/image";
 import { redirect } from "next/navigation";
 
 interface Props {
@@ -17,13 +19,23 @@ export default async function NotesFilesAndFolderPage({ params }: Props) {
   const { children, videos } = await getVideosByFolder(ids.at(-1) as string);
 
   return (
-    <div className="flex gap-6 p-5 ">
+    <div className="flex gap-6 p-5 w-full">
       {!!children &&
         children.map((folder) => (
           <Link key={folder.id} href={`${folder.id}`}>
-            <div className="flex flex-col items-center  bg-white p-1    hover:shadow-red-100 active:scale-50">
-              <Folder size={120} className="text-green-300" />
-              <h2 className=" font-semibold">{folder.category_name}</h2>
+            <div className="bg-white shadow-lg rounded-lg p-4 mb-4 w-full md:w-[100%] flex flex-col items-center hover:shadow-red-100 active:scale-50">
+              {folder.image ? (
+              <Image
+                src={`${SERVER_IMAGE_URL}${folder.image}`}
+                width={120}
+                height={120}
+                alt={folder.category_name}
+                className="rounded-lg"
+              />
+              ) : (
+              <Folder size={120} className="text-red-500" />
+              )}
+              <h2 className="text-xl font-bold mt-2">{folder.category_name}</h2>
             </div>
           </Link>
         ))}
