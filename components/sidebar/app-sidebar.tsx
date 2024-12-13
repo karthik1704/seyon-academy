@@ -38,12 +38,12 @@ const items = [
     icon: "/images/menu/test.png",
   },
   {
-    title: "Inbox",
+    title: "Connect",
     url: "#",
     icon: "/images/menu/inbox.png",
   },
   {
-    title: "Notifications",
+    title: "Notice",
     url: "#",
     icon: "/images/menu/notification.png",
   },
