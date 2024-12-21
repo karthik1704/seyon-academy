@@ -9,20 +9,21 @@ export default async function NotesPage() {
   const notes: NoteType[] = await getNotes();
   const notesFolders = await getNotesFolders();
   return (
-    <div className="flex gap-6 p-5 ">
+    <div className="flex flex-wrap gap-6 p-5 ">
       {notesFolders.map((folder) => (
         <Link key={folder.id} href={`notes/${folder.id}`}>
-            <div className="bg-white shadow-lg rounded-lg p-4 mb-4 w-full md:w-[100%] flex flex-col items-center hover:shadow-red-100 active:scale-50">
+            <div className="bg-white shadow-lg rounded-lg p-4 mb-4  md:max-w-[200px] flex flex-col items-center hover:shadow-red-100 active:scale-50 ">
             {/* <Folder size={120} className="text-red-500" /> */}
             {folder.image ? (
               <Image
-                src={`${SERVER_IMAGE_URL}${folder.image}`}
-                width={120}
-                height={120}
-                alt={folder.category_name}
+              src={`${SERVER_IMAGE_URL}${folder.image}`}
+              width={100}
+              height={100}
+              alt={folder.category_name}
+              className="w-full h-auto"
               />
             ) : (
-              <Folder size={120} className="text-red-500" />
+              <Folder size="100%" className="text-red-500 w-full h-auto" />
             )}
             <h2 className=" font-semibold">{folder.category_name}</h2>
           </div>

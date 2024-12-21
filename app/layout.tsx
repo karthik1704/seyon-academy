@@ -24,7 +24,7 @@ export default function RootLayout({
     <html lang="en" className="">
       <GoogleTagManager gtmId="AW-16792179174" />
       <body
-        className={`${namakuSans.variable} antialiased text-black`}
+        className={`${namakuSans.variable} antialiased text-black `}
       >
         {children}
       </body>

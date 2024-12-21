@@ -11,7 +11,7 @@ export default async function VideosPage() {
 
   return (
     <div>
-      <div className="flex gap-6 p-5 ">
+      <div className="flex flex-col md:flex-row gap-6 p-5 flex-wrap  ">
         {videosFolders.map((folder) => (
           <Link key={folder.id} href={`videos/${folder.id}`}>
             <div className="bg-white shadow-lg rounded-lg p-4 mb-4 w-full md:w-[100%] flex flex-col items-center hover:shadow-red-100 active:scale-50">

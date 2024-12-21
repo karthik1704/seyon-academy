@@ -17,20 +17,23 @@ export default async function Layout({
   // console.log(sutdent);
 
   return (
-    <SidebarProvider className="overflow-hidden">
+    <SidebarProvider >
       <AppSidebar />
-      <main className="w-full ">
-        <nav className="flex items-center justify-between border-b px-6 py-4 shadow-md ">
+      <main className="min-h-screen min-w-screen">
+        <nav className="flex items-center justify-between border-b px-6 py-4 shadow-md fixed top-0 left-0 right-0 w-full bg-white z-10 ">
+          <div className="flex items-center space-x-4">
+
           <SidebarTrigger className="hidden md:block" />
-          <Link href="/students/dashboard" className=" md:hidden">
+          <Link href="/students/dashboard">
             <Image
               src={DASHBOARD_LOGO_URL}
               alt="Logo"
               width={100}
               height={100}
               className="h-22 w-18"
-            />
+              />
           </Link>
+              </div>
           <div className=" flex items-center space-x-4">
             <div className="hidden md:flex">
               <Link

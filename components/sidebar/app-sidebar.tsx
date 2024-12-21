@@ -62,11 +62,11 @@ const items = [
 
 export async function AppSidebar() {
   return (
-    <Sidebar className="bg-white shadow-md">
+    <Sidebar className="bg-white shadow-md " collapsible="icon">
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupContent>
-            <div className="flex flex-col gap-4 items-center justify-center p-4">
+            {/* <div className="flex flex-col gap-4 items-center justify-center p-4">
               <Image
                 src={DASHBOARD_LOGO_URL}
                 alt="Logo"
@@ -77,7 +77,8 @@ export async function AppSidebar() {
               <h2 className="text-2xl font-semibold text-gray-900">
                 Seyon Academy
               </h2>
-            </div>
+            </div> */}
+            <div className="mt-20"></div>
           </SidebarGroupContent>
         </SidebarGroup>
         <SidebarGroup>
@@ -85,16 +86,16 @@ export async function AppSidebar() {
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) => (
-                <SidebarMenuItem key={item.title}>
+                <SidebarMenuItem key={item.title} className="my-2">
                   <SidebarMenuButton asChild className="p-4 font-medium ">
                     <Link href={item.url} className="flex gap-2 items-center">
 
                       <Image
                         src={item.icon}
-                        width={24}
-                        height={24}
+                        width={30}
+                        height={30}
                         alt={item.title}
-                        className="h-6 w-6 object-contain"
+                        className="h-8 w-8  object-contain"
                       />
                       <span className="font-medium text-lg">{item.title}</span>
                     </Link>
