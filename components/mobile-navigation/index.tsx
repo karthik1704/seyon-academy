@@ -51,7 +51,7 @@ export default function MobileNavigation() {
   const pathname = usePathname();
 
   return (
-    <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200">
+    <nav className="md:hidden fixed bottom-0 left-0 right-0 bg-white border-t border-gray-200 ">
       <ul className="flex justify-around items-center h-16">
         {navItems.map((item) => {
           const isActive = pathname === item.url;
@@ -59,14 +59,14 @@ export default function MobileNavigation() {
             <li key={item.title}>
               <Link
                 href={item.url}
-                className={`flex flex-col items-center p-2 ${
+                className={`flex flex-col items-center p-1 ${
                   isActive ? "text-blue-600" : "text-gray-600"
                 }`}
               >
                 <Image
                   src={item.icon}
-                  width={24}
-                  height={24}
+                  width={20}
+                  height={20}
                   alt={item.title}
                   className="h-6 w-6 object-contain"
                 />

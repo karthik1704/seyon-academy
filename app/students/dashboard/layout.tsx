@@ -17,12 +17,12 @@ export default async function Layout({
   // console.log(sutdent);
 
   return (
-    <SidebarProvider>
+    <SidebarProvider className="overflow-hidden">
       <AppSidebar />
-      <main className="w-full">
-        <nav className="flex items-center justify-between border-b px-6 py-4 shadow-md sticky">
+      <main className="w-full ">
+        <nav className="flex items-center justify-between border-b px-6 py-4 shadow-md ">
           <SidebarTrigger className="hidden md:block" />
-          <Link href="/students/dashboard">
+          <Link href="/students/dashboard" className=" md:hidden">
             <Image
               src={DASHBOARD_LOGO_URL}
               alt="Logo"
