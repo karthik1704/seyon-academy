@@ -27,6 +27,11 @@ const items = [
     icon: "/images/menu/read.png",
   },
   {
+    title: "Live",
+    url: "/students/dashboard/live",
+    icon: "/images/menu/watch 1.png",
+  },
+  {
     title: "Watch",
     url: "/students/dashboard/videos",
     icon: "/images/menu/watch 1.png",
