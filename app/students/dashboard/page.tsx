@@ -6,8 +6,8 @@ export default async function StudentDashboardPage() {
   const student: StudentType = await getCurrentStudent();
 
   return (
-    <div className="w-full h-full  bg-gradient-to-br from-white from-60% to-green-400 to-30%">
-      <div className="flex flex-col mt-8 ml-4">
+    <div className="w-full h-full bg-gradient-to-br from-white from-60% to-green-400 to-30%">
+      <div className="flex flex-col  ml-4">
       <h1 className="text-2xl font-bold">
         Welcome {student.first_name + " " + student.last_name}
       </h1>

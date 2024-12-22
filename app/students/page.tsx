@@ -1,5 +1,5 @@
 import { Metadata } from "next";
-import { DASHBOARD_LOGO_URL, LOGO_URL } from "../constants";
+import { DASHBOARD_LOGO_URL } from "../constants";
 import StudentSigninForm from "./student-signin-form";
 import Image from "next/image";
 

@@ -17,46 +17,45 @@ export default async function Layout({
   // console.log(sutdent);
 
   return (
-    <SidebarProvider >
+    <SidebarProvider>
       <AppSidebar />
-      <main className="min-h-screen min-w-screen">
-        <nav className="flex items-center justify-between border-b px-6 py-4 shadow-md fixed top-0 left-0 right-0 w-full bg-white z-10 ">
+        <nav className="flex items-center justify-between border-b px-2 py-4 shadow-md fixed top-0 left-0 right-0 w-full bg-white z-10 ">
           <div className="flex items-center space-x-4">
-
-          <SidebarTrigger className="hidden md:block" />
-          <Link href="/students/dashboard">
-            <Image
-              src={DASHBOARD_LOGO_URL}
-              alt="Logo"
-              width={100}
-              height={100}
-              className="h-22 w-18"
+            <SidebarTrigger className="hidden md:block" />
+            <Link href="/students/dashboard">
+              <Image
+                src={DASHBOARD_LOGO_URL}
+                alt="Logo"
+                width={100}
+                height={100}
+                className="h-22 w-18"
               />
-          </Link>
-              </div>
+            </Link>
+          </div>
           <div className=" flex items-center space-x-4">
-            <div className="hidden md:flex">
+            <div className=" md:flex">
               <Link
-                className="flex items-center space-x-2"
-                href={"#"}
-                target="_blank"
+                className="flex items-center space-x-1"
+                href={"/students/dashboard/live"}
               >
-                <div className="bg-green-500 w-3 h-3 rounded-full"></div>
-                <span className="text-green-800">You have Live class Now!</span>
-              </Link>
-              <Link
-                className="flex items-center space-x-2"
-                href={"#"}
-                target="_blank"
-              >
-                <div className="bg-red-500 w-3 h-3 rounded-full"></div>
-                <span className="text-red-800">offline class</span>
+                <div className="rounded-full">
+                  <Image
+                    src="/images/menu/live_stream.png"
+                    alt="live"
+                    width={40}
+                    height={40}
+                    className="rounded-full"
+                  />
+                </div>
+                <span className="text-green-800">Live</span>
               </Link>
             </div>
             <Bell size={18} />
             <DropdownUser user={sutdent} />
           </div>
         </nav>
+        <main className="w-full mt-20">
+
         {children}
       </main>
       <MobileNavigation />

@@ -26,11 +26,11 @@ const items = [
     url: "/students/dashboard/notes",
     icon: "/images/menu/read.png",
   },
-  {
-    title: "Live",
-    url: "/students/dashboard/live",
-    icon: "/images/menu/watch 1.png",
-  },
+  // {
+  //   title: "Live",
+  //   url: "/students/dashboard/live",
+  //   icon: "/images/menu/watch 1.png",
+  // },
   {
     title: "Watch",
     url: "/students/dashboard/videos",
