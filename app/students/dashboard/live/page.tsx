@@ -9,9 +9,8 @@ export default async function LiveClassPage() {
   }
   
   return (
-    <div>
-      <h1>Live Class</h1>
-      <div className="aspect-w-16 aspect-h-12">
+    <div className="h-full">
+      <div className="aspect-w-16 aspect-h-9 p-8 h-full">
         <iframe
           className="w-full h-full rounded-lg"
           src={`${liveClass.class_link}?modestbranding=1&showinfo=0&rel=0&controls=1`}
