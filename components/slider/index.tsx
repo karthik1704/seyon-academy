@@ -84,7 +84,7 @@ const Slide: React.FC<SlideData> = ({ imageUrl, title }) => (
       </div>
     </CardContent> */}
     <div className="flex flex-col md:flex-row items-center gap-8 p-6">
-      <div className="w-full md:w-1/2 space-y-4">
+      <div className="w-full md:w-1/2 space-y-4 bg-[url('/images/home/e1.png')]">
         {title && (
           <h2 className="text-2xl md:text-6xl text-center md:text-left font-bold space-y-2">
             <span className="block  py-2 ">{title.line1}</span>

@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <div>
       <div className="h-full mb-4">
-        <div className="flex flex-col md:flex-row p-2 bg-green-600 justify-center items-center gap-4 ">
+        {/* <div className="flex flex-col md:flex-row p-2 bg-green-600 justify-center items-center gap-4 ">
           <div className="text-xs font-bold marquee text-white text-center">
             WHATSAPP NOW / CALL US - ADMISSION FOR 9TH TO 10TH AND 11TH TO 12TH
             IS GOING NOW, HURRY UP JOIN RIGHT NOW LIMITED SEATS ONLY
@@ -25,8 +25,8 @@ export default function Home() {
           >
             WhatsApp Us
           </Link>
-        </div>
-        <nav className="bg-green-900 p-4">
+        </div> */}
+        <nav className="bg-[#DEF4E4] p-4 text-white">
           <div className="container mx-auto flex justify-between items-center">
             <div className="">
               <Link href="/">
@@ -38,22 +38,22 @@ export default function Home() {
                 />
               </Link>
             </div>
-            <div className="hidden md:block">
+            <div className="hidden md:block font-bold text-lg">
               <Link
                 href="/"
-                className="text-gray-300 hover:text-white px-3 text-md font-medium active:font-bold"
+                className="text-green-800 hover:text-white px-3 text-md font-medium active:font-bold"
               >
                 Home
               </Link>
               <Link
                 href="#"
-                className="text-gray-300 hover:text-white px-3 text-md font-medium"
+                className="text-green-800 hover:text-white px-3 text-md font-medium"
               >
                 Courses
               </Link>
               <Link
                 href="/about"
-                className="text-gray-300 hover:text-white px-3 text-md font-medium"
+                className="text-green-800 hover:text-white px-3 text-md font-medium"
               >
                 About
               </Link>
@@ -61,7 +61,7 @@ export default function Home() {
             <div>
               <Link
                 href="/students"
-                className="bg-blue-500 text-white px-4 py-1 rounded hover:bg-blue-700 active:scale-50"
+                className="bg-green-800 text-white px-4 py-2  hover:bg-green-700 active:scale-50 rounded-full"
               >
                 {" "}
                 Student Login
