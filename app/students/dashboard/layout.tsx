@@ -40,14 +40,14 @@ export default async function Layout({
               >
                 <div className="rounded-full">
                   <Image
-                    src="/images/menu/live_stream.png"
+                    src="/images/menu/live_now.png"
                     alt="live"
-                    width={40}
-                    height={40}
+                    width={70}
+                    height={30}
                     className="rounded-full"
                   />
                 </div>
-                <span className="text-green-800">Live</span>
+                {/* <span className="text-green-800">Live</span> */}
               </Link>
             </div>
             <Bell size={18} />
