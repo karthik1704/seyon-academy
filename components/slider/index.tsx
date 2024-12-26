@@ -18,7 +18,7 @@ import useEmblaCarousel from "embla-carousel-react";
 // Define the structure for our slide data
 interface SlideData {
   imageUrl: string;
-  title: { line1: string; highlight: string; line2: string } | null;
+  title: { line1: string; highlight: string; line2: string, line3:string } | null;
   description: string;
 }
 
@@ -57,9 +57,10 @@ const slides: SlideData[] = [
   {
     imageUrl: "/images/slider/web 0.avif",
     title: {
-      line1: "I don't just teach,",
-      highlight: "I train my students to",
-      line2: "turn their dreams into reality",
+      line1: "I Don't Just Teach;",
+      highlight: "I Train My Students ",
+      line2: "To Turn Their Dreams ",
+      line3: "Into Reality",
     },
     description:
       "Here's some information for slide 2. Feel free to add more details.",
@@ -84,19 +85,21 @@ const Slide: React.FC<SlideData> = ({ imageUrl, title }) => (
       </div>
     </CardContent> */}
     <div className="flex flex-col md:flex-row items-center gap-8 p-6">
-      <div className="w-full md:w-1/2 space-y-4 bg-[url('/images/home/e1.png')]">
+      <div className="w-full md:w-1/2 space-y-4 bg-[url('/images/home/e1.png')] flex flex-col items-center">
         {title && (
-          <h2 className="text-2xl md:text-6xl text-center md:text-left font-bold space-y-2">
-            <span className="block  py-2 ">{title.line1}</span>
-            <span className=" bg-green-700 text-white px-4 py-3 rounded-full inline-block">
-              {title.highlight}
+          <h2 className="text-2xl md:text-6xl text-center md:text-left font-bold space-y-2 pl-4 p-2">
+            <span className="block  py-2 "> {title.line1}</span>
+            <span className="  px-4 py-3 rounded-full inline-block">
+             {title.highlight}
             </span>
             <span className="block py-2 ">{title.line2}</span>
+            <span className="block py-2 ">{title.line3} </span>
           </h2>
         )}
+        <Image src={"/images/home/signature.png" } width={200} height={300} alt="signature" />
       </div>
       <div className="w-full md:w-1/2">
-        <div className="p-2 relative">
+        <div className="p-1 relative">
           <Image
             src={imageUrl}
             alt="Food presentation"
