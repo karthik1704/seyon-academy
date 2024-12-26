@@ -26,7 +26,7 @@ export default function Home() {
             WhatsApp Us
           </Link>
         </div> */}
-        <nav className="bg-[#DEF4E4] p-4 text-white">
+        <nav className="bg-[#DEF4E4] p-7 text-white">
           <div className="container mx-auto flex justify-between items-center">
             <div className="">
               <Link href="/">
