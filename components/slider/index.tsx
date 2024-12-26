@@ -89,7 +89,7 @@ const Slide: React.FC<SlideData> = ({ imageUrl, title }) => (
         {title && (
           <h2 className="text-2xl md:text-6xl text-center md:text-left font-bold space-y-2 pl-4 p-2">
             <span className="block  py-2 "> {title.line1}</span>
-            <span className="  px-4 py-3 rounded-full inline-block">
+            <span className="  px-4 py-2 rounded-full inline-block">
              {title.highlight}
             </span>
             <span className="block py-2 ">{title.line2}</span>
