@@ -18,7 +18,7 @@ import useEmblaCarousel from "embla-carousel-react";
 // Define the structure for our slide data
 interface SlideData {
   imageUrl: string;
-  title: {line1: string, highlight: string, line2: string} | null;
+  title: { line1: string; highlight: string; line2: string } | null;
   description: string;
 }
 
@@ -67,7 +67,7 @@ const slides: SlideData[] = [
 ];
 
 // Custom Slide component
-const Slide: React.FC<SlideData> = ({ imageUrl, title,  }) => (
+const Slide: React.FC<SlideData> = ({ imageUrl, title }) => (
   <Card className="w-full h-full overflow-hidden">
     {/* <CardContent className="p-0 ">
       <div className="flex flex-col md:flex-row items-center justify-center h-[60%]">
@@ -84,28 +84,29 @@ const Slide: React.FC<SlideData> = ({ imageUrl, title,  }) => (
       </div>
     </CardContent> */}
     <div className="flex flex-col md:flex-row items-center gap-8 p-6">
-                <div className="w-full md:w-1/2">
-                  <div className="p-2 relative">
-                    <Image
-                      src={imageUrl}
-                      alt="Food presentation"
-                      width={500}
-                      height={500}
-                      className="w-full aspect-square object-cover"
-                    />
-                  </div>
-                </div>
-                <div className="w-full md:w-1/2 space-y-4">
-                {title && (
-                  <h2 className="text-2xl md:text-6xl text-center md:text-left font-bold space-y-2">
-                    <span className="block  py-2 ">{title.line1}</span>
-                    <span className=" bg-green-700 text-white px-4 py-3 rounded-full inline-block">
-                      {title.highlight}
-                    </span>
-                    <span className="block py-2 ">{title.line2}</span>
-                  </h2>)}
-                </div>
-              </div>
+      <div className="w-full md:w-1/2 space-y-4">
+        {title && (
+          <h2 className="text-2xl md:text-6xl text-center md:text-left font-bold space-y-2">
+            <span className="block  py-2 ">{title.line1}</span>
+            <span className=" bg-green-700 text-white px-4 py-3 rounded-full inline-block">
+              {title.highlight}
+            </span>
+            <span className="block py-2 ">{title.line2}</span>
+          </h2>
+        )}
+      </div>
+      <div className="w-full md:w-1/2">
+        <div className="p-2 relative">
+          <Image
+            src={imageUrl}
+            alt="Food presentation"
+            width={500}
+            height={500}
+            className="w-full aspect-square object-cover"
+          />
+        </div>
+      </div>
+    </div>
   </Card>
 );
 
