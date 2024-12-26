@@ -1,3 +1,6 @@
+/* eslint-disable @next/next/no-img-element */
+// eslint-disable-next-line @next/next/no-img-element
+
 import Footer from "@/components/footer";
 import LearningPrograms from "@/components/home/learning-programs";
 import Select from "@/components/select";
@@ -70,17 +73,17 @@ export default function Home() {
         <div>
           <ImageTextCarousel />
         </div>
-        <div className="bg-[url('/images/home/banner_website_home_1.png')] bg-cover  bg-center h-full">
+        {/* <div className="bg-[url('/images/home/banner_website_home_1.png')] bg-cover  bg-center h-full">
           <section className="container mx-auto flex justify-center items-start  h-full">
             <div className="hidden md:flex justify-center items-end h-[70%] w-full ">
               <div className="overflow-hidden h-[340px] w-[250px] rounded-full relative  border-blue-500">
-                {/* <Image
+               <Image
                 src="/images/home/school_girl_image.png"
                 width={250}
                 height={200}
                 alt="seyon student"
                 className="object-cover object-bottom rounded-full"
-              /> */}
+              /> 
               </div>
             </div>
             <div className="w-full h-auto  md:h-[80%] flex justify-center items-center">
@@ -193,9 +196,14 @@ export default function Home() {
               </div>
             </div>
           </section>
-        </div>
+        </div> */}
 
         {/* Card Section */}
+        <div className="container w-full mx-auto p-4">
+
+          <img src="/images/home/TOTAL_PSD.webp"  className="w-full" alt="seyon academy" />
+
+        </div>
 
         <LearningPrograms />
       </div>
