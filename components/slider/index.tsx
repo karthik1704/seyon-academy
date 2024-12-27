@@ -55,7 +55,7 @@ const slides: SlideData[] = [
   //     "Here's some information for slide 2. Feel free to add more details.",
   // },
   {
-    imageUrl: "/images/slider/web 0.avif",
+    imageUrl: "/images/slider/web6.jpg",
     title: {
       line1: "I Don't Just Teach;",
       highlight: "I Train My Students ",
@@ -84,12 +84,12 @@ const Slide: React.FC<SlideData> = ({ imageUrl, title }) => (
         </div>
       </div>
     </CardContent> */}
-    <div className="flex flex-col md:flex-row items-center gap-8 p-6">
-      <div className="w-full md:w-1/2 space-y-4 bg-[url('/images/home/e1.png')] flex flex-col items-center">
+    <div className="flex flex-col md:flex-row items-center p-6">
+      {/* <div className="w-full md:w-1/2 space-y-4 bg-[url('/images/home/e1.png')] flex flex-col items-center">
         {title && (
           <h2 className="text-2xl md:text-6xl text-center md:text-left font-bold space-y-2 pl-4 p-2">
             <span className="block  py-2 "> {title.line1}</span>
-            <span className="  px-4 py-2 rounded-full inline-block">
+            <span className="   py-2 rounded-full inline-block">
              {title.highlight}
             </span>
             <span className="block py-2 ">{title.line2}</span>
@@ -97,15 +97,15 @@ const Slide: React.FC<SlideData> = ({ imageUrl, title }) => (
           </h2>
         )}
         <Image src={"/images/home/signature.png" } width={200} height={300} alt="signature" />
-      </div>
-      <div className="w-full md:w-1/2">
+      </div> */}
+      <div className="w-full ">
         <div className="p-1 relative">
           <Image
             src={imageUrl}
             alt="Food presentation"
-            width={500}
-            height={500}
-            className="w-full aspect-square object-cover"
+            width={1440}
+            height={900}
+            className="w-full  object-contain"
           />
         </div>
       </div>
