@@ -11,8 +11,8 @@ const namakuSans = localFont({
 
 
 export const metadata: Metadata = {
-  title: "Seyon Academy",
-  description: "Seyon Academy's is next generation coaching platform",
+  title: "Seyon - The Best Online Physics Coaching Institute",
+  description: "NEET & Board Exam Physics 💡 | Top-Notch Coaching ⚡ 🎯 Interactive & Quality Teaching 💥 ",
 };
 
 export default function RootLayout({
