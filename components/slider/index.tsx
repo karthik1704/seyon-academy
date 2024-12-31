@@ -65,6 +65,39 @@ const slides: SlideData[] = [
     description:
       "Here's some information for slide 2. Feel free to add more details.",
   },
+  {
+    imageUrl: "/images/slider/neet banner .jpg",
+    title: {
+      line1: "I Don't Just Teach;",
+      highlight: "I Train My Students ",
+      line2: "To Turn Their Dreams ",
+      line3: "Into Reality",
+    },
+    description:
+      "Here's some information for slide 2. Feel free to add more details.",
+  },
+  {
+    imageUrl: "/images/slider/spark.jpg",
+    title: {
+      line1: "I Don't Just Teach;",
+      highlight: "I Train My Students ",
+      line2: "To Turn Their Dreams ",
+      line3: "Into Reality",
+    },
+    description:
+      "Here's some information for slide 2. Feel free to add more details.",
+  },
+  {
+    imageUrl: "/images/slider/nexus.jpg",
+    title: {
+      line1: "I Don't Just Teach;",
+      highlight: "I Train My Students ",
+      line2: "To Turn Their Dreams ",
+      line3: "Into Reality",
+    },
+    description:
+      "Here's some information for slide 2. Feel free to add more details.",
+  },
 ];
 
 // Custom Slide component

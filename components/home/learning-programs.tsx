@@ -7,70 +7,73 @@ import { Button } from "@/components/ui/button";
 import { Card, CardContent } from "@/components/ui/card";
 
 const programs = [
+  
   {
-    id: 1,
-    title: "Nexus",
+    id: 8,
+    title: "Phoenix",
     description: "Seyon online physics batch",
-    image: "/images/home/learning-cards/10th_cbse.avif?height=200&width=300",
-    badge: "10th - CBSE",
+    image:
+      "/images/home/learning-cards/n_point_phoenix.jpg?height=200&width=300",
+    badge: "12th / Repeater - NEET",
   },
   {
-    id: 2,
-    title: "Nexus",
+    id: 7,
+    title: "Eagle",
     description: "Seyon online physics batch",
-    image: "/images/home/learning-cards/10th_icse.avif?height=200&width=300",
-    badge: "10th - ICSE",
+    image:
+      "/images/home/learning-cards/n point eagle.jpg?height=200&width=300",
+    badge: "11th - NEET",
   },
-  {
-    id: 3,
-    title: "Nexus",
-    description: "Seyon online physics batch",
-    image: "/images/home/learning-cards/10th_icse.avif?height=200&width=300",
-    badge: "10th - StateBoard",
-  },
-  {
-    id: 4,
-    title: "Spark",
-    description: "Seyon online physics batch",
-    image: "/images/home/learning-cards/12th_cbse.avif?height=200&width=300",
-    badge: "12th - CBSE",
-  },
+
 
   {
     id: 5,
     title: "Spark",
     description: "Seyon online physics batch",
-    image: "/images/home/learning-cards/12th_isc.avif?height=200&width=300",
+    image: "/images/home/learning-cards/12th isc.jpg?height=200&width=300",
     badge: "12th - ICSE",
   },
+
+  {
+    id: 4,
+    title: "Spark",
+    description: "Seyon online physics batch",
+    image: "/images/home/learning-cards/12th cbse.jpg?height=200&width=300",
+    badge: "12th - CBSE",
+  },
+
+ 
 
   {
     id: 6,
     title: "Spark",
     description: "Seyon online physics batch",
     image:
-      "/images/home/learning-cards/12th_state_board.avif?height=200&width=300",
+      "/images/home/learning-cards/12th StateBoard.jpg?height=200&width=300",
     badge: "12th - StateBoard",
   },
 
   {
-    id: 7,
-    title: "Eagle",
+    id: 2,
+    title: "Nexus",
     description: "Seyon online physics batch",
-    image:
-      "/images/home/learning-cards/n_point_eagle.avif?height=200&width=300",
-    badge: "11th - NEET",
+    image: "/images/home/learning-cards/10th Icse .jpg?height=200&width=300",
+    badge: "10th - ICSE",
+  },
+  {
+    id: 3,
+    title: "Nexus",
+    description: "Seyon online physics batch",
+    image: "/images/home/learning-cards/10th Cbse .jpg?height=200&width=300",
+    badge: "10th - CBSE",
   },
 
-  {
-    id: 8,
-    title: "Phoenix",
-    description: "Seyon online physics batch",
-    image:
-      "/images/home/learning-cards/n_point_phoenix.avif?height=200&width=300",
-    badge: "12th / Repeater - NEET",
-  },
+
+
+
 ];
+
+
 
 export default function LearningPrograms() {
   const scrollContainerRef = useRef<HTMLDivElement>(null);
@@ -104,7 +107,7 @@ export default function LearningPrograms() {
           {programs.map((program) => (
             <Card key={program.id} className="w-[350px] bg-white shadow-lg">
               <CardContent className="p-0">
-                <div className="relative h-[250px]">
+                <div className="relative h-[350px]">
                   <Image
                     src={program.image}
                     alt={program.title}
