@@ -1,13 +1,16 @@
 import type { Metadata } from "next";
-import localFont from "next/font/local";
+import {Poppins} from 'next/font/google';
 import { GoogleTagManager } from '@next/third-parties/google'
 
 import "./globals.css";
+import { Toaster } from "@/components/ui/sonner";
 
-const namakuSans = localFont({
-  src: "../public/fonts/namaku/Namaku.ttf",
-  variable: "--font-namaku-sans",
-});
+const poppins = Poppins({
+  weight: ["400", "700", "800"],
+  subsets: ['latin'],
+  variable: '--font-poppins',
+})
+
 
 
 export const metadata: Metadata = {
@@ -24,9 +27,14 @@ export default function RootLayout({
     <html lang="en" className="">
       <GoogleTagManager gtmId="AW-16792179174" />
       <body
-        className={`${namakuSans.variable} antialiased text-black `}
+        className={`${poppins.variable} antialiased text-black `}
       >
+        <main>
+
         {children}
+        </main>
+        <Toaster position="top-right" richColors/>
+
       </body>
     </html>
   );

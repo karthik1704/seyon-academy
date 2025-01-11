@@ -34,7 +34,7 @@ export async function signinJwt(prevState: StateType, formData: FormData) {
   if (!validatedFields.success) {
     console.log(validatedFields.error.flatten().fieldErrors);
     return {
-      
+      message: null,
       fieldErrors: {
         username: validatedFields.error.flatten().fieldErrors.username?.join(","),
         password: validatedFields.error.flatten().fieldErrors.password?.join(","),
@@ -75,8 +75,7 @@ export async function signinJwt(prevState: StateType, formData: FormData) {
       console.log(error);
 
       return {
-        ...prevState,
-        message: JSON.stringify(error?.detail),
+        message: error.detail,
         fieldErrors: {
           username: undefined,
           password: undefined,

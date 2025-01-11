@@ -1,80 +1,115 @@
-'use client';
+"use client";
 
 import SubmitButton from "@/components/submit-button";
-import { useActionState } from "react";
+import { useActionState, useEffect } from "react";
+import Image from "next/image";
 import { signinJwt } from "./actions";
+import { DASHBOARD_LOGO_URL } from "../constants";
+import { toast } from "sonner";
 
 export type InitialState = {
-    message?: string ;
-    fieldErrors?: {
-      username?: string ;
-      password?: string ;
-    };
+  message: string | null;
+  fieldErrors?: {
+    username?: string ;
+    password?: string ;
   };
-  
-  const initialState: InitialState = {
-    message: undefined,
-    fieldErrors: {
-      username: undefined,
-      password: undefined,
-    },
-  };
-  
+};
+
+const initialState: InitialState = {
+  message: null,
+  fieldErrors: {
+    username: undefined,
+    password: undefined,
+  },
+};
 
 const StudentSigninForm = () => {
-    const [state, formAction] = useActionState(signinJwt, initialState);
+  const [state, formAction] = useActionState(signinJwt, initialState);
 
-    return(
-        <form action={formAction} className="space-y-6">
-        <div>
-          <label htmlFor="email" className="block text-sm/6 font-medium text-gray-900">
-            Registration Number
-          </label>
-          <div className="mt-2">
-            <input
-              id="email"
-              name="username"
-              type="text"
-              required
-              autoComplete="email"
-              className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6"
-            />
-          </div>
+  useEffect(() => {
+    if (state.message) {
+      toast.error(state.message , {
+        dismissible: true,
+        closeButton: true,
+        duration: 10000,
+      });
+    }
+  }, [state.message, state]);
+
+  return (
+    <div className="flex items-center justify-center h-screen ">
+      <div className="w-full max-w-md p-4 md:p-8 bg-white md:rounded-lg md:shadow-md">
+        <div className="text-center">
+          <Image
+            width={150}
+            height={200}
+            alt="Seyon Academy Logo"
+            src={DASHBOARD_LOGO_URL}
+            className="mx-auto  w-auto mb-2"
+          />
+          <h2 className="text-2xl font-bold text-gray-800">Welcome Back</h2>
+          <p className="mt-2 text-sm text-gray-600">Sign in to continue</p>
         </div>
+        <form action={formAction} className="mt-6 space-y-6">
+          <div>
+            <label
+              htmlFor="email"
+              className="block text-sm font-medium text-gray-700"
+            >
+              Registration Number
+            </label>
+            <div className="mt-2">
+              <input
+                id="email"
+                name="username"
+                type="text"
+                required
+                autoComplete="email"
+                placeholder="Enter your registration number"
+                className="w-full px-4 py-2 text-gray-800 bg-gray-100 border rounded-md focus:ring-2 focus:ring-green-500 focus:outline-none"
+              />
+            </div>
+          </div>
 
-        <div>
-          <div className="flex items-center justify-between">
-            <label htmlFor="password" className="block text-sm/6 font-medium text-gray-900">
+          <div>
+            <label
+              htmlFor="password"
+              className="block text-sm font-medium text-gray-700"
+            >
               Password
             </label>
-            {/* <div className="text-sm">
-              <a href="#" className="font-semibold text-indigo-600 hover:text-indigo-500">
-                Forgot password?
-              </a>
-            </div> */}
+            <div className="mt-2">
+              <input
+                id="password"
+                name="password"
+                type="password"
+                required
+                autoComplete="current-password"
+                placeholder="Enter your password"
+                className="w-full px-4 py-2 text-gray-800 bg-gray-100 border rounded-md focus:ring-2 focus:ring-green-500 focus:outline-none"
+              />
+              <p className="mt-1 text-xs text-gray-500">
+                Default password is Date of Birth (DD-MM-YYYY)
+              </p>
+            </div>
           </div>
-          <div className="mt-2">
-            <input
-              id="password"
-              name="password"
-              type="password"
-              required
-              autoComplete="current-password"
-              className="block w-full rounded-md border-0 py-1.5 text-gray-900 shadow-sm ring-1 ring-inset ring-gray-300 placeholder:text-gray-400 focus:ring-2 focus:ring-inset focus:ring-indigo-600 sm:text-sm/6"
+
+          <div>
+            <SubmitButton
+              name="Sign In"
+              className="w-full py-2 text-white bg-green-600 rounded-md hover:bg-green-700"
             />
-            <p className="text-gray-600">Default password is Date of birth (DD-MM-YYYY) </p>
           </div>
-
-        </div>
-
-        <div>
-          <SubmitButton name="Signin" />
-        </div>
-      </form>
-    )
-
-}
-
-
+        </form>
+        {/* <p className="mt-4 text-center text-sm text-gray-600">
+                    Forgot your password?{' '}
+                    <a href="#" className="font-medium text-purple-600 hover:underline">
+                        Reset here
+                    </a>
+                </p> */}
+      </div>
+    </div>
+  );
+};
 
 export default StudentSigninForm;

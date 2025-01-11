@@ -68,7 +68,7 @@ const config: Config = {
   			sm: 'calc(var(--radius) - 4px)'
   		},
 		  fontFamily: {
-			sans: ['var(--font-namaku-sans)'],
+			sans: ['var(--font-poppins)'],
 		  },
   	}
   },
