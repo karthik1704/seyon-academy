@@ -1,5 +1,5 @@
 // import { Home, NotebookTabs, MonitorPlay, Settings } from "lucide-react";
-
+'use client';
 import {
   Sidebar,
   SidebarContent,
@@ -13,71 +13,71 @@ import {
 import Link from "next/link";
 import Image from "next/image";
 import { DASHBOARD_LOGO_URL, LOGO_URL } from "@/app/constants";
+import { BookCheck, CircleAlert, Home, Library, Play, SendHorizontal, Settings } from "lucide-react";
+import { usePathname } from "next/navigation";
 
 // Menu items.
 const items = [
   {
     title: "Home",
     url: "/students/dashboard",
-    icon: "/images/menu/home.png",
+    icon: Home,
   },
   {
     title: "Read",
     url: "/students/dashboard/notes",
-    icon: "/images/menu/read.png",
+    icon: Library,
   },
-  // {
-  //   title: "Live",
-  //   url: "/students/dashboard/live",
-  //   icon: "/images/menu/watch 1.png",
-  // },
+
   {
     title: "Watch",
     url: "/students/dashboard/videos",
-    icon: "/images/menu/watch 1.png",
+    icon: Play,
   },
 
   {
     title: "Test",
     url: "#",
-    icon: "/images/menu/test.png",
+    icon: BookCheck,
   },
   {
     title: "Connect",
     url: "#",
-    icon: "/images/menu/inbox.png",
+    icon: SendHorizontal,
   },
   {
     title: "Notice",
     url: "#",
-    icon: "/images/menu/notification.png",
+    icon: CircleAlert,
   },
 
   {
     title: "Settings",
     url: "#",
-    icon: "/images/menu/settings.png",
+    icon: Settings,
   },
 ];
 
-export async function AppSidebar() {
+export  function AppSidebar() {
+  const pathname = usePathname()
   return (
+
     <Sidebar className="bg-white shadow-md " collapsible="icon">
       <SidebarContent>
         <SidebarGroup>
           <SidebarGroupContent>
-            {/* <div className="flex flex-col gap-4 items-center justify-center p-4">
+            <div className="flex flex-col gap-4 items-center justify-center p-4">
               <Image
-                src={DASHBOARD_LOGO_URL}
+                src={'/images/logo/logo pp.png'}
                 alt="Logo"
-                width={100}
-                height={100}
+                width={200}
+                height={200}
                 className="h-22 w-18"
               />
-              <h2 className="text-2xl font-semibold text-gray-900">
+              <h2 className="text-2xl text-green-900 font-bold group-data-[collapsible=icon]:hidden" >
                 Seyon Academy
               </h2>
-            </div> */}
+            </div>
             <div className="mt-20"></div>
           </SidebarGroupContent>
         </SidebarGroup>
@@ -86,18 +86,11 @@ export async function AppSidebar() {
           <SidebarGroupContent>
             <SidebarMenu>
               {items.map((item) => (
-                <SidebarMenuItem key={item.title} className="my-2">
-                  <SidebarMenuButton asChild className="p-4 font-medium ">
-                    <Link href={item.url} className="flex gap-2 items-center">
-
-                      <Image
-                        src={item.icon}
-                        width={30}
-                        height={30}
-                        alt={item.title}
-                        className="h-8 w-8  object-contain"
-                      />
-                      <span className="font-medium text-lg">{item.title}</span>
+                <SidebarMenuItem key={item.title} >
+                  <SidebarMenuButton asChild className="font-medium " isActive={pathname.includes(item.url)} size={"lg"}>
+                    <Link href={item.url} className="flex  items-center">
+                      <item.icon className="text-green-600"/>
+                      <span className="font-bold group-data-[collapsible=icon]:hidden">{item.title}</span>
                     </Link>
                   </SidebarMenuButton>
                 </SidebarMenuItem>
@@ -107,5 +100,6 @@ export async function AppSidebar() {
         </SidebarGroup>
       </SidebarContent>
     </Sidebar>
+
   );
 }

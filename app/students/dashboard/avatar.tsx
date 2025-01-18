@@ -19,10 +19,10 @@ const DropdownUser = ({user}:{user:StudentType}) => {
         href="#"
       >
         <span className="hidden text-right lg:block">
-          <span className="block text-sm font-medium text-black dark:text-white">
+          <span className="block text-sm font-bold text-black dark:text-white">
             {user?.first_name ?? ""} {user?.last_name ?? ""}
           </span>
-          <span className="block text-xs">{user?.batch.batch_name}</span>
+          <span className="block text-xs font-sans">{user?.batch.batch_name}</span>
         </span>
 
         <span className="h-8 w-8 rounded-full">

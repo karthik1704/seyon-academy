@@ -6,8 +6,9 @@ import "./globals.css";
 import { Toaster } from "@/components/ui/sonner";
 
 const poppins = Poppins({
-  weight: ["400", "700", "800"],
+  weight: ["100", "200", "300", "500","400", "600", "700", "800", "900"],
   subsets: ['latin'],
+  style: ['normal', "italic"],
   variable: '--font-poppins',
 })
 

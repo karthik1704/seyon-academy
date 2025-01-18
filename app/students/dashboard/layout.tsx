@@ -19,7 +19,8 @@ export default async function Layout({
   return (
     <SidebarProvider>
       <AppSidebar />
-        <nav className="flex items-center justify-between border-b px-2 py-4 shadow-md fixed top-0 left-0 right-0 w-full bg-white z-10 ">
+      <div className="w-full h-full">
+        <nav className="flex items-center justify-between border-b px-2 py-4 shadow-md  bg-white z-10 ">
           <div className="flex items-center space-x-4">
             <SidebarTrigger className="hidden md:block" />
             <Link href="/students/dashboard">
@@ -47,17 +48,14 @@ export default async function Layout({
                     className="rounded-full"
                   />
                 </div>
-                {/* <span className="text-green-800">Live</span> */}
               </Link>
             </div>
             <Bell size={18} />
             <DropdownUser user={sutdent} />
           </div>
         </nav>
-        <main className="w-full mt-20">
-
-        {children}
-      </main>
+        <main className="w-full mt-30">{children}</main>
+      </div>
       <MobileNavigation />
     </SidebarProvider>
   );
