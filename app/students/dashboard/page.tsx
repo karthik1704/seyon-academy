@@ -9,7 +9,7 @@ export default async function StudentDashboardPage() {
     <div className="w-full  h-full bg-gradient-to-br from-white from-60% to-green-400 to-30%">
       <div className="flex flex-col justify-center mt-4">
         <div className="flex flex-col  ml-4 text-center md:text-left">
-          <h1 className="text-2xl font-bold text-wrap">
+          <h1 className="text-2xl font-bold  ">
             Welcome{" "}
             {student.first_name + " " + student.last_name}
           </h1>

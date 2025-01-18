@@ -23,7 +23,7 @@ export default async function Layout({
         <nav className="flex items-center justify-between border-b px-2 py-4 shadow-md  bg-white z-10 ">
           <div className="flex items-center space-x-4">
             <SidebarTrigger className="hidden md:block" />
-            <Link href="/students/dashboard">
+            <Link href="/students/dashboard" className="md:hidden">
               <Image
                 src={DASHBOARD_LOGO_URL}
                 alt="Logo"
