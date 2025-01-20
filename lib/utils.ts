@@ -44,6 +44,3 @@ export function lessThanExpiryDate(expiry_date: string): boolean {
   return expiry_date > today;
 }
 
-// Test with the given expiry date
-const result = lessThanExpiryDate('2025-01-20T21:08:00Z');
-console.log('Is the expiry date in the future?', result);
