@@ -17,7 +17,7 @@ export default async function LiveClassPage({
   const videos = await getDemoClasses();
   const user = await getCurrentDemoUser();
 
-  if (!lessThanExpiryDate(user.end_time)) {
+  if (!lessThanExpiryDate(user.end_time.slice(0,16))) {
     return (
       <div className="grid justify-items-center items-center h-svh">
         <div className="flex flex-col items-center text-center gap-2">
@@ -47,7 +47,7 @@ export default async function LiveClassPage({
     );
   }
 
-  if (lessThanExpiryDate(user.start_time)) {
+  if (lessThanExpiryDate(user.start_time.slice(0,16))) {
     return (
       <div className="grid justify-items-center items-center h-svh">
         <div className="flex flex-col items-center text-center gap-2">

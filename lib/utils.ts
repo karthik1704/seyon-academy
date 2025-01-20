@@ -38,6 +38,6 @@ export function lessThanExpiryDate(expiry_date: string): boolean {
   const expiryDateObj = new Date(expiry_date);
 
   // Compare expiry date with today
-  return expiryDateObj < today;
+  return expiryDateObj > today;
 }
 
