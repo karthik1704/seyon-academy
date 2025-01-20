@@ -32,15 +32,12 @@ export function getCurrentDate() {
 
 export function lessThanExpiryDate(expiry_date: string): boolean {
   // Get the current date in UTC
-  const today = DateTime.utc();
+  const today = new Date();
 
-  // Parse the expiry date in UTC
-  // const expiry = DateTime.from(expiry_date, { zone: 'utc' });
+  // Parse the expiry_date string into a Date object
+  const expiryDateObj = new Date(expiry_date);
 
-  // console.log('Expiry:', expiry.toISO());  // Logs in ISO format
-  console.log('Today:', today.toISO());    // Logs in ISO format
-  
   // Compare expiry date with today
-  return expiry_date > today;
+  return expiryDateObj < today;
 }
 
