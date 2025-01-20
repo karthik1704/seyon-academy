@@ -1,9 +1,6 @@
 'use client';
-import dynamic from "next/dynamic";
 import { VideoJsPlayerOptions } from "video.js";
-import Image from "next/image";
-// Dynamically import VideoPlayer to prevent server-side rendering
-const VideoPlayer = dynamic(() => import("@/components/video-player"), { ssr: false });
+import VideoPlayer from "@/components/video-player";
 
 export default  function LivePlayer() {
 
@@ -14,8 +11,7 @@ export default  function LivePlayer() {
     fluid: true,
     sources: [
       {
-        src: "https://d1l6g0g8s8syz2.cloudfront.net/TEST/output.m3u8",
-        type: "application/x-mpegURL",
+        src: "https://cdn.seyonacademy.com/demo/1111111.mp4",
         
       },
       
@@ -24,11 +20,7 @@ export default  function LivePlayer() {
 
   return (
     <div>
-      <h1>HLS Video with Video.js</h1>
-
       <VideoPlayer options={videoJsOptions} />
-      <Image src="https://d1l6g0g8s8syz2.cloudfront.net/lab.jpeg" width={500} height={500} alt='test'/>
-
     </div>
   );
     

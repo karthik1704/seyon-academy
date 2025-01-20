@@ -12,10 +12,8 @@ export default async function LiveClassPage() {
   // }
   
   return (
-    <div>
-      <h1>HLS Video with Video.js</h1>
+    <div className="p-10 ">
       <Player/>
-
     </div>
   );
     

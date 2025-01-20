@@ -3,7 +3,6 @@
 
 import Footer from "@/components/footer";
 import LearningPrograms from "@/components/home/learning-programs";
-import Select from "@/components/select";
 import ImageTextCarousel from "@/components/slider";
 import Image from "next/image";
 import Link from "next/link";
@@ -11,7 +10,7 @@ import { LOGO_URL } from "./constants";
 
 export default function Home() {
   return (
-    <div>
+    <div className="font-sans">
       <div className="h-full mb-4">
         {/* <div className="flex flex-col md:flex-row p-2 bg-green-600 justify-center items-center gap-4 ">
           <div className="text-xs font-bold marquee text-white text-center">
@@ -58,7 +57,13 @@ export default function Home() {
                 About
               </Link>
             </div>
-            <div>
+            <div className="flex gap-2">
+              <Link
+                href="/demo"
+                className="bg-green-800 text-white px-4 py-2  hover:bg-green-700 active:scale-50 rounded-full"
+              >
+                Demo Login
+              </Link>
               <Link
                 href="/students"
                 className="bg-green-800 text-white px-4 py-2  hover:bg-green-700 active:scale-50 rounded-full"

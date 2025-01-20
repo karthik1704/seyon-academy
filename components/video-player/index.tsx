@@ -1,3 +1,4 @@
+"use client";
 import React, { useEffect, useRef } from "react";
 import videojs, { VideoJsPlayer, VideoJsPlayerOptions } from "video.js";
 import "video.js/dist/video-js.css";
@@ -30,7 +31,7 @@ const VideoPlayer: React.FC<VideoPlayerProps> = ({ options }) => {
   return (
     <div>
       <div data-vjs-player>
-        <video ref={videoRef} className="video-js vjs-default-skin" />
+        <video ref={videoRef} className="video-js vjs-default-skin " />
       </div>
     </div>
   );
