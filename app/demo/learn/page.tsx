@@ -4,7 +4,6 @@ import Video from "./video-and-sidebar";
 import Link from "next/link";
 import Image from "next/image";
 import { DASHBOARD_LOGO_URL } from "@/app/constants";
-import { Bell } from "lucide-react";
 import DropdownUser from "./avatar";
 import { dateTimeFormatter, lessThanExpiryDate } from "@/lib/utils";
 
@@ -18,63 +17,63 @@ export default async function LiveClassPage({
   const videos = await getDemoClasses();
   const user = await getCurrentDemoUser();
 
-  if (!lessThanExpiryDate(user.end_time)) {
-    return (
-      <div className="grid justify-items-center items-center h-svh">
-        <div className="flex flex-col items-center text-center gap-2">
-          <Image
-            src="/images/logo/logo_gif.gif"
-            width={200}
-            height={200}
-            alt="seyon gif"
-            unoptimized
-            priority
-          />
-          <h1 className="font-sans font-bold text-2xl">
-            Your Demo Time Expired!.
-          </h1>
-          <p className="text-muted-foreground">
-            If you want extra time please contact us
-          </p>
-          <Link
-            href="https://wa.me/919342261389"
-            target="_blank"
-            className="bg-green-200 px-4 py-2 rounded-full hover:bg-green-500 hover:text-white  text-xs text-green-600"
-          >
-            WhatsApp Us
-          </Link>
-        </div>
-      </div>
-    );
-  }
+  // if (!lessThanExpiryDate(user.end_time)) {
+  //   return (
+  //     <div className="grid justify-items-center items-center h-svh">
+  //       <div className="flex flex-col items-center text-center gap-2">
+  //         <Image
+  //           src="/images/logo/logo_gif.gif"
+  //           width={200}
+  //           height={200}
+  //           alt="seyon gif"
+  //           unoptimized
+  //           priority
+  //         />
+  //         <h1 className="font-sans font-bold text-2xl">
+  //           Your Demo Time Expired!.
+  //         </h1>
+  //         <p className="text-muted-foreground">
+  //           If you want extra time please contact us
+  //         </p>
+  //         <Link
+  //           href="https://wa.me/919342261389"
+  //           target="_blank"
+  //           className="bg-green-200 px-4 py-2 rounded-full hover:bg-green-500 hover:text-white  text-xs text-green-600"
+  //         >
+  //           WhatsApp Us
+  //         </Link>
+  //       </div>
+  //     </div>
+  //   );
+  // }
 
-  if (lessThanExpiryDate(user.start_time)) {
-    return (
-      <div className="grid justify-items-center items-center h-svh">
-        <div className="flex flex-col items-center text-center gap-2">
-          <Image
-            src="/images/logo/logo_gif.gif"
-            width={200}
-            height={200}
-            alt="seyon gif"
-            unoptimized
-            priority
-          />
-          <h1 className="font-sans font-bold text-2xl">Your Demo Class Staring Time:</h1>
-          <p className="text-muted-foreground text-2xl">
-            {dateTimeFormatter(user.start_time)}
-          </p>
-          <Link
-            href="https://wa.me/919342261389"
-            target="_blank"
-            className="bg-green-200 px-4 py-2 rounded-full hover:bg-green-500 hover:text-white  text-xs text-green-600"
-          >
-            WhatsApp Us
-          </Link>
-        </div>
-      </div>
-    );
-  }
+  // if (lessThanExpiryDate(user.start_time)) {
+  //   return (
+  //     <div className="grid justify-items-center items-center h-svh">
+  //       <div className="flex flex-col items-center text-center gap-2">
+  //         <Image
+  //           src="/images/logo/logo_gif.gif"
+  //           width={200}
+  //           height={200}
+  //           alt="seyon gif"
+  //           unoptimized
+  //           priority
+  //         />
+  //         <h1 className="font-sans font-bold text-2xl">Your Demo Class Staring Time:</h1>
+  //         <p className="text-muted-foreground text-2xl">
+  //           {dateTimeFormatter(user.start_time)}
+  //         </p>
+  //         <Link
+  //           href="https://wa.me/919342261389"
+  //           target="_blank"
+  //           className="bg-green-200 px-4 py-2 rounded-full hover:bg-green-500 hover:text-white  text-xs text-green-600"
+  //         >
+  //           WhatsApp Us
+  //         </Link>
+  //       </div>
+  //     </div>
+  //   );
+  // }
 
   return (
     <div>
