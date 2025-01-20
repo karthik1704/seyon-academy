@@ -2,6 +2,8 @@ import { clsx, type ClassValue } from "clsx"
 import { twMerge } from "tailwind-merge"
 import dayjs from 'dayjs';
 import customParseFormat from 'dayjs/plugin/customParseFormat';
+import { DateTime } from 'luxon';
+
 dayjs.extend(customParseFormat);
 
 export function cn(...inputs: ClassValue[]) {
@@ -27,11 +29,21 @@ export function getCurrentDate() {
   return `${year}-${month}-${day}`;
 }
 
-export function lessThanExpiryDate(expiry_date:string):boolean{
-  const today = new Date();
-  const expiry = new Date(expiry_date);
-  console.log(expiry);
-  console.log(today);
-  console.log(expiry > today);
-  return expiry > today;
+
+export function lessThanExpiryDate(expiry_date: string): boolean {
+  // Get the current date in UTC
+  const today = DateTime.utc();
+
+  // Parse the expiry date in UTC
+  // const expiry = DateTime.from(expiry_date, { zone: 'utc' });
+
+  // console.log('Expiry:', expiry.toISO());  // Logs in ISO format
+  console.log('Today:', today.toISO());    // Logs in ISO format
+  
+  // Compare expiry date with today
+  return expiry_date > today;
 }
+
+// Test with the given expiry date
+const result = lessThanExpiryDate('2025-01-20T21:08:00Z');
+console.log('Is the expiry date in the future?', result);

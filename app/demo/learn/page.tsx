@@ -59,7 +59,7 @@ export default async function LiveClassPage({
             unoptimized
             priority
           />
-          <h1 className="font-sans font-bold text-2xl">Your Demo Class Staring Time:</h1>
+          <h1 className="font-sans font-bold text-2xl">Your Demo Class Starting at:</h1>
           <p className="text-muted-foreground text-2xl">
             {dateTimeFormatter(user.start_time.slice(0,16))}
           </p>
