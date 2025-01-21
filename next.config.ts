@@ -27,6 +27,10 @@ const nextConfig:NextConfig = {
             protocol: 'https',
             hostname: 'd1l6g0g8s8syz2.cloudfront.net',
           },
+          {
+            protocol: 'https',
+            hostname: 'cdn.seyonacademy.com',
+          },
         ],
       },
 };

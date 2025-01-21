@@ -12,17 +12,17 @@ const DropdownUser = ({ user }: { user: StudentType }) => {
 
   return (
     // <ClickOutside onClick={() => setDropdownOpen(false)} className="relative">
-    <div>
+    <div className="font-sans">
       <Link
         onClick={() => setDropdownOpen(!dropdownOpen)}
         className="flex items-center gap-4"
         href="#"
       >
         <span className="hidden text-right lg:block">
-          <span className="block text-sm font-bold text-black dark:text-white">
+          <span className="block text-sm  text-black dark:text-white">
             {user?.first_name ?? ""} {user?.last_name ?? ""}
           </span>
-          <span className="block text-xs font-sans">
+          <span className="block text-xs ">
             {user?.batch.batch_name}
           </span>
         </span>
